@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coconut & Tofu Thai Red Curry</title>
+	<link rel="stylesheet" href="CSS files/recipiepage.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fuzzy+Bubbles&family=Meie+Script&family=Waterfall&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+
+<body>
+      <!-- setting up the Mouse cursor -->
+	<div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+      const coords = {
+      x: 0,
+      y: 0
+    };
+    const circles = document.querySelectorAll(".circle");
+    const colors = [
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ];
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+    
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+        circle.x = x;
+        circle.y = y;
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+      requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+    </script>
+    
+<!-- NAVBAR -->
+    <div id="navbar">
+          <div class="logo">
+              
+          </div>
+          <div class="menu">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="catalog.html">Recipies</a></li>
+                <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="landingpage.html#contact" id="contact">Contact Us</a></li>
+            </ul>
+        </div>
+          
+      </div>
+      <script type="text/javascript">
+        // setting up navbar such that it hides whenever it is scrolled down and appears when scrolled up
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll",function(){
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if(scrollTop>lastScrollTop){
+            navbar.style.top="-100px";
+          }else{
+            navbar.style.top = "0";
+          }
+          lastScrollTop = scrollTop;
+        })
+      </script>
+
+
+<!-- wrapper class is the class wrapping the entire page -->
+<div id= "wrapper">
+	<div id="imganddesc">
+		<div class="rec6">
+		
+	</div>
+	<div id="headline">
+		<h1> THAI RED CURRY!!</h1><br>
+     <div class="tags_div">
+        <div class="tag">40 mins </div>
+        <div class="tag">1 serving</div>
+        <div class="tag">Intermediate</div>
+    </div>
+
+		<p class="headdesc">DESCRIPTION</p>
+		<p class="desc">
+			This creamy Thai curry is on regular rotation in our home. It's loaded with veggies, tofu, and potatoes, making it hearty and filling.
+		</p>
+	</div>
+	</div>
+	<div class="ingredndirect">
+			<div class="Ingredients">
+		<h1>INGREDIENTS</h1>
+		<p>
+    ½ Tbsp (7 mL) vegetable oil<br>
+3 medium shallots, minced <br>
+2 cloves garlic, crushed<br>
+2 medium potatoes, cut into 1 cm cubes <br>
+3 Tbsp (45 mL) Thai red curry paste <br>
+1¼ cups (300 mL) water <br>
+1 cup (200 g) uncooked basmati rice <br> 
+12 oz (350 g) pre-seasoned tofu strips† <br>
+2 red bell peppers, chopped <br>
+1 small broccoli, cut into bite-sized pieces <br> 
+1⅔ cups (399 mL) canned full-fat coconut milk <br>
+1 Tbsp (15 mL) sodium-reduced soy sauce, plus more to taste <br> 
+1 tsp (5 mL) sambal oelek, plus more to taste <br>
+3 Tbsp (26 g) roasted unsalted cashews, chopped <br>
+    </p>
+	</div>
+	<div class="directions">
+		<h1>DIRECTIONS</h1>
+		<p>
+1. In a large pot on high heat, add the oil and sauté the shallots for about 5 minutes, or until lightly golden. Add splashes of water as needed to de-glaze the pan.<br><br>
+2. Add the garlic and cook for another 2 minutes.<br><br>
+3. Add the potatoes and curry paste, and cook for 1 - 2 minutes.<br><br>
+4. Then add the water to the pot. Bring to a boil, then reduce to a simmer, and cover with a lid. Simmer for 15 minutes.<br><br>
+5. Meanwhile, cook the rice according to package directions.<br><br>
+6. Add the remaining ingredients to the pot and cook for about 6 - 8 minutes, or until the veggies are cooked to desired tenderness.<br><br>
+7. Serve with the rice, and top with cashews for crunch. Enjoy!<br><br>
+<b>Notes</b><br>
+† Pre-seasoned tofu strips can often be found alongside regular tofu at your local grocery store, and can come in a variety of flavours.<br><br>
+<b>Storage</b><br>
+Store the curry in an airtight container in the fridge for up to 3 days, or in the freezer for up to 2 months.<br><br>
+</p>
+		
+	</div>
+	</div>
+
+  
+<div class="reviewncomment">
+	<form name="comment">
+		<h1>REVIEW</h1>
+    <input type="text" id="msg" name="msg" placeholder="Message">
+    </textarea>
+	</form>
+</div>
+	<form name="namendmail">
+		<div class="namenmail">
+  <input type="text" id="name" name="name" placeholder="Name"><br>
+  <input type="text" id="mail" name="mail" placeholder="E-mail">
+</div>
+	</form>
+	<div class="review" style=" color: rgb(243, 181, 25);">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                          <form>
+		<button class="button">Submit</button>
+	</form>	
+
+    <!-- Quote for fun -->
+	<div class="quote">
+		<p>"We burnt it So, you dont have to"  </p>
+	</div>
+</div>
+
+<!-- COmmon footer for all subpages-->
+ <footer>
+        <div class="footer">
+          <div class="footer1">
+            <h2>Amritha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/amrututu/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/amrithanandini/" target="_blank"><img src="images/linkedinlogo.png" ></a>
+              <a href="https://github.com/amri-tah" target="_blank"><img src="images/githublogo.png" ></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Samhitha</h2>
+            <div class="logos">
+              <a href="http://instagram.com/samhitha_07/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/samhitha-s-476634270/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Samhitha-07" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Manasha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/_maanzz_/" target="_blank"><img src="images/instalogo.png"></a>
+              <a href="https://www.linkedin.com/in/manasha-arunachalam-531719250/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Manasha-1204" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; padding:1px; margin: 0;">Copyright &copy Burnt Brotta B_Team 1</p>
+      </footer>
+</body>
+</html>

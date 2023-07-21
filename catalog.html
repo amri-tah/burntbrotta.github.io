@@ -1,0 +1,283 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Burnt Brotta | Catalog</title>
+    </head>
+    <link rel="stylesheet" href="./CSS files/catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <body>
+     <!-- setting up the Mouse cursor -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+    const coords = {
+    x: 0,
+    y: 0
+    };
+    const circles = document.querySelectorAll(".circle");
+    const colors = [
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000"
+    ];
+    circles.forEach(function (circle, index) {
+    circle.x = 0;
+    circle.y = 0;
+    circle.style.backgroundColor = colors[index % colors.length];
+    });
+    window.addEventListener("mousemove", function (e) {
+    coords.x = e.clientX;
+    coords.y = e.clientY;
+    });
+    
+    function animateCircles() {
+    let x = coords.x;
+    let y = coords.y;
+    circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+        circle.x = x;
+        circle.y = y;
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+    });
+    requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+    </script>
+
+      <!-- NAVBAR -->
+    <div id="navbar">
+        <div class="logo">
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="catalog.html">Recipies</a></li>
+                <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="landingpage.html#contact" id="con">Contact Us</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <script type="text/javascript">
+        // setting up navbar such that it hides whenever it is scrolled down and appears when scrolled up
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll",function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrollTop>lastScrollTop){
+            navbar.style.top="-100px";
+        }else{
+            navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+        })
+    </script>
+        
+        <div>
+        <section id="product1" class="sec1">
+            <h2><br></h2>
+            <div class="moving-text">
+                <span><p>Find your next favorite recipe</p></span>
+            </div>
+            <div class="c-container">
+                <!-- div class pro for each recipie -->
+                <div class="pro">
+                    <div class="image-container">
+                        <!-- div class overlay text over each image -->
+                        <img src="images/catalogpage/r4.jpg" alt="Image">
+                        <div class="overlay-text">Delight in the Flaky Marvel of Homemade Parottas!
+                            Experience the Magic of Homemade Parottas: Flaky, Crispy, and Oh-So-Tasty!</div>
+                    </div>
+                    <div class="description">
+                        <span><b>Signature Burnt Brotta</b></span>
+                        <h2></h2>
+                        <div class="tags_div">
+                            <div class="tag">2 hours</div>
+                        </div>
+                        <div class="review" style=" color: rgb(243, 181, 25);">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        </div>
+                        <!-- div On clicking basket icon, goes to that particular recipie page -->
+                        <a href="r1page.html"><i class="fas fa-shopping-basket basket"></i></a>
+                    </div>
+                    <div class="pro">
+                        <div class="image-container">
+                            <img src="images/catalogpage/r1.jpg" alt="Image">
+                            <div class="overlay-text">This soup is brimming with a rich symphony of flavours from aromatic ingredients like ginger, garlic, shallots, and turmeric, lending it a unique colour and flavour profile. Mixed with noodles, potatoes, and a variety of veggies, this combination results in a delicious, filling soup that everyone can enjoy.</div>
+                        </div>
+                        <div class="description">
+                            <span><b>Indonasian Chicken Noodles</b></span>
+                            <h2></h2>
+                            <div class="tags_div">
+                                <div class="tag">40 mins</div>
+                            </div>
+                            <div class="review" style=" color: rgb(243, 181, 25);">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            </div>
+                            <a href="r2page.html"><i class="fas fa-shopping-basket basket"></i></a>
+                        </div>
+                        <div class="pro">
+                            <div class="image-container">
+                                <img src="images/catalogpage/r3.jpg" alt="Image">
+                                <div class="overlay-text">Dazzle the senses with this indulgently creamy mousse. It has a beautifully rich texture that is balanced by tart and juicy fresh raspberries. The caramel shard topping is not only beautiful, but also adds a satisfying crunch to this dessert.</div>
+                            </div>
+                            <div class="description">
+                                <span><b>Chocolate Raspberry Mousse</b></span>
+                                <h2></h2>
+                                <div class="tags_div">
+                                    <div class="tag">20 mins</div>
+                                </div>
+                                <div class="review" style=" color: rgb(243, 181, 25);">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                </div>
+                                <a href="r4page.html"><i class="fas fa-shopping-basket basket"></i></a>
+                            </div>
+                            <div class="pro">
+                                <div class="image-container">
+                                    <img src="images/catalogpage/r5.jpg" alt="Image">
+                                    <div class="overlay-text">Shakshuka is known as an easy and healthy breakfast option in many countries, but it can definitely be enjoyed at any time during the day. We gave our own plant-based spin to the classic dish </div>
+                                </div>
+                                <div class="description">
+                                    <span><b>Oven Baked Tofu Shakshuka</b></span>
+                                    <h2></h2>
+                                    <div class="tags_div">
+                                        <div class="tag">40 mins</div>
+                                    </div>
+                                    <div class="review" style=" color: rgb(243, 181, 25);">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    </div>
+                                    <a href="r3page.html"><i class="fas fa-shopping-basket basket"></i></a>
+                                </div>
+                                <div class="pro">
+                                    <div class="image-container">
+                                        <img src="images/catalogpage/r2.jpg" alt="Image">
+                                        <div class="overlay-text">Bubble tea, as the name suggests, is a tea-based drink from Taiwan. Bubble tea can come in many flavours and have toppings that range from chewy tapioca pearls, grass jelly, aloe vera, or red beans. </div>
+                                    </div>
+                                    <div class="description">
+                                        <span><b>Bloodshot bubble tea</b></span>
+                                        <h2></h2>
+                                        <div class="tags_div">
+                                            <div class="tag">40 mins</div>
+                                        </div>
+                                        <div class="review" style=" color: rgb(243, 181, 25);">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        </div>
+                                        <a href="r5page.html"><i class="fas fa-shopping-basket basket"></i></a>
+                                    </div>
+                                    <div class="pro">
+                                        <div class="image-container">
+                                            <img src="images/catalogpage/r6.jpg" alt="Image">
+                                            <div class="overlay-text">This creamy Thai curry is on regular rotation in our home. It's loaded with veggies, tofu, and potatoes, making it hearty and filling.</div>
+                                        </div>
+                                        <div class="description">
+                                            <span><b>Coconut & Tofu Thai Red Curry</b></span>
+                                            <h2></h2>
+                                            <div class="tags_div">
+                                                <div class="tag">40 mins</div>
+                                            </div>
+                                            <div class="review" style=" color: rgb(243, 181, 25);">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            </div>
+                                            <a href="r6page.html"><i class="fas fa-shopping-basket basket"></i></a>
+                                        </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- Common footer for all subpages -->
+        <footer>
+            <div class="footer">
+              <div class="footer1">
+                <h2>Amritha</h2>
+                <div class="logos">
+                  <a href="https://www.instagram.com/amrututu/" target="_blank"><img src="images/instalogo.png" ></a>
+                  <a href="https://www.linkedin.com/in/amrithanandini/" target="_blank"><img src="images/linkedinlogo.png" ></a>
+                  <a href="https://github.com/amri-tah" target="_blank"><img src="images/githublogo.png" ></a>
+                </div>
+              </div>
+              <div class="footer1">
+                <h2>Samhitha</h2>
+                <div class="logos">
+                  <a href="http://instagram.com/samhitha_07/" target="_blank"><img src="images/instalogo.png" ></a>
+                  <a href="https://www.linkedin.com/in/samhitha-s-476634270/" target="_blank"><img src="images/linkedinlogo.png"></a>
+                  <a href="https://github.com/Samhitha-07" target="_blank"><img src="images/githublogo.png"></a>
+                </div>
+              </div>
+              <div class="footer1">
+                <h2>Manasha</h2>
+                <div class="logos">
+                  <a href="https://www.instagram.com/_maanzz_/" target="_blank"><img src="images/instalogo.png"></a>
+                  <a href="https://www.linkedin.com/in/manasha-arunachalam-531719250/" target="_blank"><img src="images/linkedinlogo.png"></a>
+                  <a href="https://github.com/Manasha-1204" target="_blank"><img src="images/githublogo.png"></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <p style="text-align: center; padding:1px; margin: 0;">Copyright &copy Burnt Brotta B_Team 1</p>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    </body>
+</html>

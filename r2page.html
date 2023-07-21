@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indonesain Chicken Noodles</title>
+  <link rel="stylesheet" href="CSS files/recipiepage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fuzzy+Bubbles&family=Meie+Script&family=Waterfall&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+      <!-- setting up the Mouse cursor -->
+  <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+      const coords = {
+      x: 0,
+      y: 0
+    };
+    const circles = document.querySelectorAll(".circle");
+    const colors = [
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ];
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+    
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+        circle.x = x;
+        circle.y = y;
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+      requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+    </script>
+    
+      <!-- NAVBAR -->
+    <div id="navbar">
+          <div class="logo">
+              
+          </div>
+          <div class="menu">
+              <ul>
+                  <li><a href="landingpage.html">Home</a></li>
+                  <li><a href="catalog.html">Recipies</a></li>
+                  <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                  <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="landingpage.html#contact" id="contact">Contact Us</a></li>
+              </ul>
+          </div>
+          
+      </div>
+      <script type="text/javascript">
+        // setting up navbar such that it hides whenever it is scrolled down and appears when scrolled up
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll",function(){
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if(scrollTop>lastScrollTop){
+            navbar.style.top="-100px";
+          }else{
+            navbar.style.top = "0";
+          }
+          lastScrollTop = scrollTop;
+        })
+      </script>
+
+<!-- wrapper class is the class wrapping the entire page -->
+<div id= "wrapper">
+  <div id="imganddesc">
+    <div class="rec2">
+  </div>
+  <div id="headline">
+    <h1>INDONESIAN CHICKEN NOODLES!!</h1><br>
+     <div class="tags_div">
+        <div class="tag">40 hours </div>
+        <div class="tag">1 serving</div>
+        <div class="tag">Easy</div>
+    </div>
+
+    <p class="headdesc">DESCRIPTION</p>
+    <p class="desc">
+      This soup is brimming with a rich symphony of flavours from aromatic ingredients like ginger, garlic, shallots, and turmeric, lending it a unique colour and flavour profile. Mixed with noodles, potatoes, and a variety of veggies, this combination results in a delicious, filling soup that everyone can enjoy.
+    </p>
+  </div>
+  </div>
+  <div class="ingredndirect">
+      <div class="Ingredients">
+    <h1>INGREDIENTS</h1>
+    <b>Bumbu "blend of spices"</b>
+<p>0.75 clove garlic, whole<br>
+0.5 medium shallot, quartered<br>
+0.5 red hot chili pepper, or less for less spicy<br>
+1¼ tsp (2 g) fresh ginger, peeled<br>
+¾ tsp (4 mL) vegetable oil<br>
+¼ + ⅛ tsp (1 g) fresh turmeric<br>
+¼ + ⅛ tsp (0.7 g) ground coriander<p>
+<b>Soup base</b>
+<p>¾ tsp (4 mL) vegetable oil<br>
+0.5 medium potato, peeled, cut into ½cm slices<br>
+1 cup (240 mL) water<br>
+0.25 vegetable bouillon cube<br>
+⅓ cup + 1½ Tbsp (103 mL) canned full-fat coconut milk<br>
+1.3 oz (38 g) dry ramen noodles<p>
+<b>Vegan "chicken"</b>
+<p>¾ tsp (4 mL) vegetable oil<br>
+1.8 oz (50 g) mock "chicken" pieces<br>
+0.75 clove garlic, thinly sliced<br>
+0.5 medium shallot, minced<br>
+½ tsp (1 g) chicken spice mix</p>
+<b>Garnish</b>
+<p>2½ Tbsp + ½ tsp (15 g) fresh bean sprouts<br>
+1 Tbsp (1 g) fresh cilantro (optional)<br>
+0.25 stalk green onion, sliced<br>
+1½ tsp (2 g) crispy fried onions (optional)</p>
+  </div>
+  <div class="directions">
+    <h1>DIRECTIONS</h1>
+    <P>1. Add all of the bumbu ingredients to a small food processor. Blend until smooth*.<br><br>
+2. Add the oil to a large pot on medium-high. When hot, add the bumbu mixture and cook for 3 minutes, stirring throughout.<br><br>
+3. Then add the potatoes, water, and bouillon. Cook covered at a simmer 10 minutes, or until the potatoes are cooked through.<br><br>
+4. Meanwhile, add the oil to a large pan on medium-high heat. When hot, add the mock chicken and cook for 3 minutes.<br><br>
+5. Then add the garlic and shallot, and cook for another 2 - 3 minutes.<br><br>
+6. Add the 'chicken' spice mix. Cook for 30 seconds, stirring throughout. Set aside.<br><br>
+7. When the potatoes are cooked, add the chicken to the pot, along with the coconut milk. Cook until heated through.<br><br>
+8. Meanwhile, prepare the noodles according to the package instructions. For us, the noodles simply needed to sit in boiling water for 3 minutes.
+9. Add the noodles to a bowl, and ladle the soup over top. Garnish, and enjoy!<br><br>
+<b>Notes</b><br>
+* Add more oil or a small splash of water as needed if the mixture won't blend.<br><br>
+<b>Storage</b><br>
+The assembled soup is best when enjoyed immediately, but can also be stored in an airtight container in the fridge for up to 2 days.</p>
+    
+  </div>
+  </div>
+<div class="reviewncomment">
+  <form name="comment">
+    <h1>REVIEW</h1>
+    <input type="text" id="msg" name="msg" placeholder="Message">
+    </textarea>
+  </form>
+</div>
+  <form name="namendmail">
+    <div class="namenmail">
+  <input type="text" id="name" name="name" placeholder="Name"><br>
+  <input type="text" id="mail" name="mail" placeholder="E-mail">
+</div>
+  </form>
+  <div class="review" style=" color: rgb(243, 181, 25);">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                          <form>
+    <button class="button">Submit</button>
+  </form> 
+
+<!-- Quote for fun -->
+  <div class="quote">
+    <p>"We burnt it So, you dont have to"  </p>
+  </div>
+</div>
+
+<!-- COmmon footer for all subpages-->
+ <footer>
+        <div class="footer">
+          <div class="footer1">
+            <h2>Amritha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/amrututu/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/amrithanandini/" target="_blank"><img src="images/linkedinlogo.png" ></a>
+              <a href="https://github.com/amri-tah" target="_blank"><img src="images/githublogo.png" ></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Samhitha</h2>
+            <div class="logos">
+              <a href="http://instagram.com/samhitha_07/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/samhitha-s-476634270/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Samhitha-07" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Manasha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/_maanzz_/" target="_blank"><img src="images/instalogo.png"></a>
+              <a href="https://www.linkedin.com/in/manasha-arunachalam-531719250/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Manasha-1204" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; padding:1px; margin: 0;">Copyright &copy Burnt Brotta B_Team 1</p>
+      </footer>
+</body>
+</html>

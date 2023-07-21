@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oven Baked Tofu Shakshuka</title>
+	<link rel="stylesheet" href="CSS files/recipiepage.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fuzzy+Bubbles&family=Meie+Script&family=Waterfall&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body>
+  <!-- setting up the Mouse cursor -->
+	<div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+      const coords = {
+      x: 0,
+      y: 0
+    };
+    const circles = document.querySelectorAll(".circle");
+    const colors = [
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ];
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+    
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+        circle.x = x;
+        circle.y = y;
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+      requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+    </script>
+    
+
+<!-- NAVBAR -->
+    <div id="navbar">
+          <div class="logo">
+              
+          </div>
+          <div class="menu">
+              <ul>
+                  <li><a href="landingpage.html">Home</a></li>
+                  <li><a href="catalog.html">Recipies</a></li>
+                  <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                  <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="landingpage.html#contact" id="contact">Contact Us</a></li>
+              </ul>
+          </div>
+          
+      </div>
+      <script type="text/javascript">
+        // setting up navbar such that it hides whenever it is scrolled down and appears when scrolled up
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll",function(){
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if(scrollTop>lastScrollTop){
+            navbar.style.top="-100px";
+          }else{
+            navbar.style.top = "0";
+          }
+          lastScrollTop = scrollTop;
+        })
+      </script>
+
+
+<!-- wrapper class is the class wrapping the entire page -->
+<div id= "wrapper">
+	<div id="imganddesc">
+		<div class="rec3">
+		
+	</div>
+	<div id="headline">
+		<h1>Oven Baked Tofu Shakshuka!!</h1><br>
+     <div class="tags_div">
+        <div class="tag">40 mins </div>
+        <div class="tag">1 serving</div>
+        <div class="tag">Intermediate</div>
+    </div>
+
+		<p class="headdesc">DESCRIPTION</p>
+		<p class="desc">
+			Shakshuka is known as an easy and healthy breakfast option in many countries, but it can definitely be enjoyed at any time during the day. We gave our own plant-based spin to the classic dish 
+		</p>
+	</div>
+	</div>
+	<div class="ingredndirect">
+			<div class="Ingredients">
+		<h1>INGREDIENTS</h1>
+		<p>
+    ½ cup + 1 Tbsp (135 g) canned diced tomatoes<br>
+    0.67 red bell pepper, chopped<br>
+    0.33 medium red onion, finely chopped <br>
+    0.67 red hot chili pepper, seeds removed, minced†<br> 
+    1 clove garlic, minced<br>
+    2 tsp (11 g) tomato paste<br>
+    1 tsp (5 mL) olive oil<br>
+    ½ tsp (1 g) smoked sweet paprika powder<br>
+    ¼ + ⅛ tsp (0.8 g) ground cumin<br>
+    ¼ + ⅛ tsp (0.7 g) ground coriander<br>
+    ¼ + ⅛ tsp (2 g) salt<br>
+    ¼ + ⅛ tsp (2 g) kala namak‡<br>
+    ⅛ tsp + 1 pinch (0.6 g) ground turmeric<br>
+    3.5 oz (100 g) silken tofu<br>
+    1.7 small pita breads, toasted<br> 
+ <b>Optional garnish</b><br>
+    fresh cilantro<br>
+    za'atar spice mix<br>
+    lemon slice<br>
+    </p>
+	</div>
+	<div class="directions">
+		<h1>DIRECTIONS</h1>
+		<p>
+1. Preheat the oven to 390°F (200°C). To a 9 x 12 inch (23 x 31 cm) baking dish*, add the diced tomato, bell pepper, onion, chilis, garlic, tomato paste, olive oil, paprika, cumin, coriander, and salt.<br><br>
+2. Mix together, then bake in the oven for 30 minutes. Meanwhile, on a large plate, mix together the kala namak and turmeric. Slice the tofu into even ½ inch (1 cm) thick slices and coat lightly with the salt and turmeric mix.<br><br>
+3. Place the sliced silken tofu on top of the tomato mixture and press the pieces in a little bit. Transfer the baking dish back into the oven and let it bake for another 10 - 15 minutes.<br><br>
+4. Serve with toasted pitas, and garnish with za'atar, cilantro, and lemon slices. Enjoy!<br><br>
+<b>Notes</b><br>
+† If you don't love spice, consider using less.<br><br>
+‡ Kala namak, also known as Himalayan black salt, is a salt often used in South Asian cuisine. The sulphur compounds give the salt an egg-like smell and flavour.<br><br>
+* The shakshuka can alternatively be cooked on the stove in a wide pan with a lid.<br><br>
+<b>Storage</b><br>
+Store in an airtight container in the fridge for up to 3 days.<br><br>
+
+    </p>
+		
+	</div>
+	</div>
+<div class="reviewncomment">
+	<form name="comment">
+		<h1>REVIEW</h1>
+    <input type="text" id="msg" name="msg" placeholder="Message">
+    </textarea>
+	</form>
+</div>
+	<form name="namendmail">
+		<div class="namenmail">
+  <input type="text" id="name" name="name" placeholder="Name"><br>
+  <input type="text" id="mail" name="mail" placeholder="E-mail">
+</div>
+	</form>
+	<div class="review" style=" color: rgb(243, 181, 25);">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                          <form>
+		<button class="button">Submit</button>
+	</form>	
+
+<!-- Quote for fun -->
+	<div class="quote">
+		<p>"We burnt it So, you dont have to"  </p>
+	</div>
+</div>
+
+<!-- COmmon footer for all subpages-->
+ <footer>
+        <div class="footer">
+          <div class="footer1">
+            <h2>Amritha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/amrututu/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/amrithanandini/" target="_blank"><img src="images/linkedinlogo.png" ></a>
+              <a href="https://github.com/amri-tah" target="_blank"><img src="images/githublogo.png" ></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Samhitha</h2>
+            <div class="logos">
+              <a href="http://instagram.com/samhitha_07/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/samhitha-s-476634270/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Samhitha-07" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Manasha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/_maanzz_/" target="_blank"><img src="images/instalogo.png"></a>
+              <a href="https://www.linkedin.com/in/manasha-arunachalam-531719250/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Manasha-1204" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; padding:1px; margin: 0;">Copyright &copy Burnt Brotta B_Team 1</p>
+      </footer>
+</body>
+</html>

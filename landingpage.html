@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burnt Brotta | Home</title>
+  <link href="./CSS files/landingpage.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- setting up the Mouse cursor -->
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  
+  <script>
+    const coords = {
+    x: 0,
+    y: 0
+  };
+  const circles = document.querySelectorAll(".circle");
+  const colors = [
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000"
+  ];
+  circles.forEach(function (circle, index) {
+    circle.x = 0;
+    circle.y = 0;
+    circle.style.backgroundColor = colors[index % colors.length];
+  });
+  window.addEventListener("mousemove", function (e) {
+    coords.x = e.clientX;
+    coords.y = e.clientY;
+  });
+  
+  function animateCircles() {
+    let x = coords.x;
+    let y = coords.y;
+    circles.forEach(function (circle, index) {
+      circle.style.left = x - 12 + "px";
+      circle.style.top = y - 12 + "px";
+      circle.style.scale = (circles.length - index) / circles.length;
+      circle.x = x;
+      circle.y = y;
+      const nextCircle = circles[index + 1] || circles[0];
+      x += (nextCircle.x - x) * 0.3;
+      y += (nextCircle.y - y) * 0.3;
+    });
+    requestAnimationFrame(animateCircles);
+  }
+  animateCircles();
+  </script>
+
+  <!-- NAVBAR -->
+  <div id="navbar">
+        <div class="logo"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="catalog.html">Recipies</a></li>
+                <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="landingpage.html#contact" id="con">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+      // setting up navbar such that it hides whenever it is scrolled down and appears when scrolled up
+      var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll",function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrollTop>lastScrollTop){
+          navbar.style.top="-100px";
+        }else{
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      })
+      
+      // setting up navbar such that it hides itself whenever we are in the main starting point of the landing page
+      window.addEventListener('scroll', function() {
+      var div = document.getElementById('navbar');
+        
+      if (window.scrollY <= 700 && window.scrollY>-100) {
+        div.style.opacity = '0';
+        div.style.transition = 'opacity 500ms ease';
+      } else {
+        div.style.opacity = '1';
+        div.style.transition = 'opacity 500ms ease';
+      }
+});
+    </script>
+
+  <div class="main_wrapper" id="main">
+    <!-- Starting div of the landing page -->
+    <div class="main_div">
+      <h1>BURNT<br>BROTTA</h1>
+      <div class="menu2">
+        <h2><a href="catalog.html">Recipies</a></h2>
+        <h2><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></h2>
+        <h2><a href="aboutUs.html">About Us</a></h2>
+      </div>
+    </div>
+
+
+  <!-- First hero section-->
+    <a href="#hero_section1" id="arrow"><div class="arrow-container">
+      <div class="arrow-down"></div>
+    </div></a>
+  </div>
+
+  <div class="hero_section1" id="hero_section1">
+    <div class="hero1">
+      <h1>Kitchen Disasters Turned Delicious: </h1>
+      <h3>The Chronicles of Burnt Brotta!</h3>
+    </div>
+    <div class="img1">
+    </div>
+  </div>
+
+
+  <!-- Popular recipies div-->
+
+<div class="popularrec">
+  <h1>Popular Recipies</h1>
+  <div class="cards">
+    <a href="r1page.html"><img src="images/landing/r1.png"></a>
+    <a href="r3page.html"><img src="images/landing/r2.png"></a>
+    <a href="r6page.html"><img src="images/landing/r3.png"></a>
+  </div>
+  <div class="viewmore"><a href="catalog.html">View More!</a></div>
+ 
+</div>
+
+
+  <!-- Second hero section -->
+
+  <div class="hero_section2" >
+    <div class="hero2">
+      <h3>We put recipes to the <br>test, so you can<br>savor the success!</h3>
+    </div>
+    <div class="img2"></div>
+  </div>
+</body>
+
+
+  <!-- Contact us-->
+<div class="contactus" >
+  <h1 id="contact">Contact Us!</h1>
+  <form name="myform"  method="post" onsubmit="return validateemail();">
+    <div class="formel" >
+      <input type="text" placeholder="Name">
+      <input type="email" id="email" placeholder="Email ID">
+    </div>
+    <textarea placeholder="Message" id="message"></textarea>
+    <div class="mess"><input type="submit" value="Send Message!"></div>
+  </form>
+</div>
+
+<script>  
+function validateemail(){  
+  // form validation
+  var x=document.myform.email.value;  
+  var y=document.myform.message.value;
+  var atposition=x.indexOf("@");  
+  var dotposition=x.lastIndexOf(".");  
+  if (x==""){
+    alert("Please enter an email ID!");  
+    return false;
+  }
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    alert("Please enter a valid e-mail address");  
+    return false;  
+  }  
+  if (y==""){
+    alert("Please enter a message!");  
+    return false;
+  }
+}  
+</script>  
+
+
+<!-- Common footer for all subpages -->
+
+<footer>
+  <div class="footer">
+    <div class="footer1">
+      <h2>Amritha</h2>
+      <div class="logos">
+        <a href="https://www.instagram.com/amrututu/" target="_blank"><img src="images/instalogo.png" ></a>
+        <a href="https://www.linkedin.com/in/amrithanandini/" target="_blank"><img src="images/linkedinlogo.png" ></a>
+        <a href="https://github.com/amri-tah" target="_blank"><img src="images/githublogo.png" ></a>
+      </div>
+    </div>
+    <div class="footer1">
+      <h2>Samhitha</h2>
+      <div class="logos">
+        <a href="http://instagram.com/samhitha_07/" target="_blank"><img src="images/instalogo.png" ></a>
+        <a href="https://www.linkedin.com/in/samhitha-s-476634270/" target="_blank"><img src="images/linkedinlogo.png"></a>
+        <a href="https://github.com/Samhitha-07" target="_blank"><img src="images/githublogo.png"></a>
+      </div>
+    </div>
+    <div class="footer1">
+      <h2>Manasha</h2>
+      <div class="logos">
+        <a href="https://www.instagram.com/_maanzz_/" target="_blank"><img src="images/instalogo.png"></a>
+        <a href="https://www.linkedin.com/in/manasha-arunachalam-531719250/" target="_blank"><img src="images/linkedinlogo.png"></a>
+        <a href="https://github.com/Manasha-1204" target="_blank"><img src="images/githublogo.png"></a>
+      </div>
+    </div>
+  </div>
+  <p style="text-align: center; padding:1px; margin: 0;">Copyright &copy Burnt Brotta B_Team 1</p>
+</footer>
+
+</html>

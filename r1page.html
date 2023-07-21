@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Burnt Brotta</title>
+	<link rel="stylesheet" href="CSS files/recipiepage.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fuzzy+Bubbles&family=Meie+Script&family=Waterfall&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+
+<body>
+    <!-- setting up the Mouse cursor -->
+	<div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+      const coords = {
+      x: 0,
+      y: 0
+    };
+    const circles = document.querySelectorAll(".circle");
+    const colors = [
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ];
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+    
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+        circle.x = x;
+        circle.y = y;
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+      requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+    </script>
+    
+    <!-- NAVBAR -->
+    <div id="navbar">
+          <div class="logo">
+              
+          </div>
+          <div class="menu">
+              <ul>
+                  <li><a href="landingpage.html">Home</a></li>
+                  <li><a href="catalog.html">Recipies</a></li>
+                  <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                  <li><a href="aboutUs.html">About</a></li>
+                  <li><a href="landingpage.html#contact" id="con">Contact Us</a></li>
+              </ul>
+          </div>
+          
+      </div>
+      <script type="text/javascript">
+        // setting up navbar such that it hides whenever it is scrolled down and appears when scrolled up
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll",function(){
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if(scrollTop>lastScrollTop){
+            navbar.style.top="-100px";
+          }else{
+            navbar.style.top = "0";
+          }
+          lastScrollTop = scrollTop;
+        })
+      </script>
+
+
+  <!-- wrapper class is the class wrapping the entire page -->
+<div id= "wrapper">
+	<div id="imganddesc">
+		<div class="rec1">
+	</div>
+	<div id="headline">
+		<h1>BURNT<br>
+		BROTTA!!</h1><br>
+     <div class="tags_div">
+        <div class="tag">2 hours </div>
+        <div class="tag">1 serving</div>
+        <div class="tag">Intermediate</div>
+    </div>
+
+		<p class="headdesc">DESCRIPTION</p>
+		<p class="desc">
+			Delight in the Flaky Marvel of Homemade Parottas! Experience the Magic of Homemade Parottas: Flaky, Crispy, and Oh-So-Tasty!
+		</p>
+	</div>
+	</div>
+
+
+	<div class="ingredndirect">
+			<div class="Ingredients">
+		<h1>INGREDIENTS</h1>
+		<p>2 cups Maida <i>All-Purpose Flour</i>
+      <br>
+       ¼ cup Milk at room temperature<br>
+       1 teaspoon Sugar<br>
+<i>    Salt as needed<br>
+Water as needed</i></p>
+	</div>
+	<div class="directions">
+		<h1>DIRECTIONS</h1>
+		<P>1. In a large plate or mixing bowl add 2 cups maida, 1 teaspoon sugar, salt as needed. Roughly mix it together and make a well in the center.<br><br>
+2. Pour ¼ cup milk (at room temperature) and also add water as needed.<br>
+<br>
+3. Knead into a soft pliable dough. Add 1 tablespoon oil on top.<br><br>
+4. Now knead the dough using this special kneading technique as shown below. Push the dough using the thumb finger and keep repeating this multiple times until it is soft & smooth.<br><br>
+5. Add 2 tablespoon oil on top of the kneaded dough and cover it with a damp kitchen towel. Rest it for 2 hours at the least.<br><br>
+6. After resting, knead the dough again. It should be very smooth and soft.<br><br>
+7. Now we will make ‘beeda’ which is making balls out of the dough. Push the dough between the thumb & index finger – it should come out in a smooth ball. Twist it remove it.<br><br>
+8. Repeat this process until all the dough has been made into smooth balls. If required, knead the dough again to smoothen it. Add a teaspoon of oil on each ball of dough and rest for 15-20 mins.<br><br>
+9. Take a ball of dough and cup it with your palm, roll it to a soft ball without any creases. Repeat this with all the dough balls.<br><br>
+10. Now take a ball of dough and start spreading it on a greased surface. We used our kitchen slab (wiped it clean and applied a layer of oil)<br><br>
+11. Spread it as thin as possible, don’t worry about the holes or shape. If needed, grease your fingers in little oil.<br><br>
+12. Now carefully lift the spread dough from one end (from shorter side) without tearing it.<br><br>
+13. Gently gather it together to form a long ribbon of dough. Shape it in spiral shape without pressing it. It should fall down on its own.<br><br>
+14. Rest it on the greased kitchen counter and prepare the rest of the dough balls similarly.<br><br>
+15. To shape the parotta, add a few drops of oil on the prepared dough spiral and press it gently into a not so thin parotta. As this is made with maida, it contracts quickly so don’t spread it too thick.<br><br>
+16. Heat a pan on medium flame and keep it on low heat once hot. Place the prepared parotta and drizzle a teaspoon of oil around the edges.<br><br>
+17. As the bottom is cooked & turns golden brown streaks, flip it over gently. Again drizzle a teaspoon of oil on sides and top.<br><br>
+18. When both the sides have golden brown spots and are cooked, remove it from heat. As one parotta is cooked, shape the next one.<br><br>
+19. Once all the parottas are cooked, stack them on the kitchen counter and press them from both sides to bring out the layers. This has to be done when the parottas are hot/warm enough.<br><br>
+20. Serve hot with Salna or Kurma with a side of thayir pachadi/onion raita. If not serving immediately, store them in hotpack/hotbox to retain the softness. You can also freeze the cooked parottas in ziplock bags for upto few weeks.</p>
+		
+	</div>
+	</div>
+
+
+<div class="reviewncomment">
+	<form name="comment">
+		<h1>REVIEW</h1>
+    <input type="text" id="msg" name="msg" placeholder="Message">
+    </textarea>
+	</form>
+</div>
+	<form name="namendmail">
+		<div class="namenmail">
+  <input type="text" id="name" name="name" placeholder="Name"><br>
+  <input type="text" id="mail" name="mail" placeholder="E-mail">
+</div>
+	</form>
+	<div class="review" style=" color: rgb(243, 181, 25);">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                          <form>
+		<button class="button">Submit</button>
+	</form>	
+
+  <!-- Quote for fun -->
+	<div class="quote">
+		<p>"We burnt it So, you dont have to"  </p>
+	</div>
+</div>
+
+<!-- COmmon footer for all subpages-->
+ <footer>
+        <div class="footer">
+          <div class="footer1">
+            <h2>Amritha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/amrututu/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/amrithanandini/" target="_blank"><img src="images/linkedinlogo.png" ></a>
+              <a href="https://github.com/amri-tah" target="_blank"><img src="images/githublogo.png" ></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Samhitha</h2>
+            <div class="logos">
+              <a href="http://instagram.com/samhitha_07/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/samhitha-s-476634270/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Samhitha-07" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Manasha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/_maanzz_/" target="_blank"><img src="images/instalogo.png"></a>
+              <a href="https://www.linkedin.com/in/manasha-arunachalam-531719250/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Manasha-1204" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; padding:1px; margin: 0;">Copyright &copy Burnt Brotta B_Team 1</p>
+      </footer>
+</body>
+</html>

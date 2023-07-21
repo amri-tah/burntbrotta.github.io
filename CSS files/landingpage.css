@@ -1,0 +1,332 @@
+*{
+  scroll-behavior: smooth;
+  cursor: none;
+}
+body {
+  background-color: #F7F3EF;
+  margin: 0px;
+}
+
+#navbar{
+    position: fixed;
+    padding: 30px 50px 0px 70px;
+    display: flex;
+
+}
+
+.logo{
+  margin-right: 170px;
+  width: 300px;
+  height: 100px;
+  background-image: url("../images/logo.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+}
+
+ul{
+    display: flex;
+    gap:70px;
+    justify-content: space-around;
+}
+#navbar{
+  transition: all 300ms ease;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar a{
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: black;
+    text-decoration: none;
+}
+
+#con{
+    background-color: #ffe55b;
+    padding: 10px 20px;
+    border-radius: 13px;
+}
+/*==================================================================*/
+  .circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    background-color: black;
+    position: fixed;
+  
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+/*==================================================================*/
+  .main_wrapper {
+    background-color: #ffe55b;
+    padding: 0px 0px 10px 0px;
+  }
+  
+  .main_div {
+    margin: 0px;
+  }
+.main_div  h1 {
+    color: black;
+    font-family: "Climate Crisis";
+    font-size: 8rem;
+    line-height: 90%;
+    text-align: center;
+    padding: 200px 200px 0px 200px;
+    margin: 0px;
+    align-content: center;
+    transition: line-height 500ms ease;
+  }
+  
+  .main_div h1:hover {
+    line-height: 80%;
+  }
+  
+  .menu2 {
+    width: 40%;
+    border-radius: 24px;
+    display: flex;
+    gap: 100px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+  .menu2 a,.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+    transition: all 400ms ease;
+    border-radius: 15px;
+  }
+  .menu2 a:hover,.menu a:hover {
+    background-color: white;
+    padding: 0.86rem 1.51rem;
+  }
+
+/*==============================================================*/
+  .arrow-container {
+    margin: auto;
+    padding: 80px;
+    width: 25px;
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    height: 20px;
+  }
+  #arrow{
+    cursor: none;
+  }
+  .arrow-down {
+    height: 6px;
+    background: black;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    border-radius: 5px;
+  }
+  .arrow-down:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 100%;
+    border-radius: 5px;
+    background: black;
+    transform: rotate(-90deg);
+    transform-origin: 0% 100%;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+/*==================================================*/
+  .hero_section1 {
+    height: 100%;
+    color: black;
+    display: flex;
+    padding: 140px 20px;
+    margin: 0px 20px;
+    
+  }
+
+  .hero1{
+    margin: auto;
+    padding: 80px;
+  }
+  .hero1 h1,.contactus h1, .popularrec h1{
+    font-family: 'Poppins';
+    font-size: 3.5rem;
+    line-height: 90%;
+    font-weight: bold;
+    margin: 0;
+  }
+  .hero1 h3, .hero2 h3{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 400;
+    margin: 0px;
+
+  }
+/*==================================================*/
+.popularrec{
+  padding:100px;
+}
+.popularrec h1{
+  font-size: 2.5rem;
+}
+.cards{
+  padding: 50px;
+  display: flex;
+  gap:30px;
+  justify-content: space-around;
+}
+
+.popularrec img{
+  width:20rem;
+  height: 28rem;
+  transition: width 500ms ease,height 500ms ease;
+}
+
+.popularrec img:hover{
+  width:21rem;
+  height: 29rem;
+}
+
+.viewmore{
+  width:100%;
+  margin:0px 45%;
+}
+.viewmore a{
+  margin:0px;
+  padding: 10px 30px;
+  font-family: 'Poppins';
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  background-color: #ffe55b;
+  border-radius: 13px;
+  transition: background-color 500ms ease, color 500ms ease;
+}
+
+.viewmore a:hover{
+  color: #ffe55b;
+  background-color: black;
+}
+/*==================================================*/
+  .hero_section2{
+    padding: 40px 30%;
+  }
+  .hero2 h3{
+    font-size: 2.3rem;
+    margin:0px auto;
+    text-align: center;
+  }
+
+.img1{
+  height:500px;
+  width: 100%;
+  background-image: url("../images/landing/cooking.png");
+  background-size: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  
+}
+.img2{
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/landing/pan.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: -50px 150px;
+  height:280px;
+  width: 280px;
+}
+/*==================================================*/
+.contactus{
+  margin: 10px 0px 0px 0px;
+  padding:100px 200px;
+  background-color: #ffe55b;
+}
+.formel{
+  padding: 100px auto;
+  display: flex;
+  gap:40px;
+}
+
+input{
+  font-family: "Poppins";
+  font-size: 1rem;
+  margin: 10px;
+  width:100%;
+  height: 40px;
+  padding: 2px 30px;
+  border: 0;
+}
+
+textarea{
+  margin: 10px;
+  width:93%;
+  font-size: 1rem;
+  font-family: "Poppins";
+  height: 140px;
+  padding: 12px 30px;
+  border: 0;
+}
+
+input[type="submit"]{
+  width: 30%;
+  background-color: black;
+  color: white;
+  border: 0;
+  padding:10px 20px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 300;
+  margin:10px;
+  border-radius: 5px;
+}
+
+.mess{
+  width: 100%;
+ margin: 0px auto; 
+}
+/*==================================================*/
+footer{
+  width:100%;
+  height: 130px;
+  cursor: pointer;
+  background-color: black;
+}
+.footer{
+  padding: auto 30px;
+  justify-content: center;
+  justify-items: center;
+  padding:30px;
+  display: flex;
+  gap:200px;
+}
+
+.logos{
+  
+  display: flex;
+}
+.logos img{
+  width:40px;
+  height:40px;
+}
+
+footer h2{
+  font-size: 1rem;
+  color:white;
+   font-family: "Poppins"; 
+   font-weight: 200;
+    margin: 0; 
+    text-align: center;
+}

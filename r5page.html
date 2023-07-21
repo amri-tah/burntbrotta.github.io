@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bubble Tea</title>
+	<link rel="stylesheet" href="CSS files/recipiepage.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fuzzy+Bubbles&family=Meie+Script&family=Waterfall&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+
+<body>
+<!-- setting up the Mouse cursor -->
+	<div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+      const coords = {
+      x: 0,
+      y: 0
+    };
+    const circles = document.querySelectorAll(".circle");
+    const colors = [
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ];
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+    
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+        circle.x = x;
+        circle.y = y;
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+      requestAnimationFrame(animateCircles);
+    }
+    animateCircles();
+    </script>
+    
+      <!-- NAVBAR -->
+    <div id="navbar">
+          <div class="logo">
+              
+          </div>
+          <div class="menu">
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+                <li><a href="catalog.html">Recipies</a></li>
+                <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="landingpage.html#contact" id="contact">Contact Us</a></li>
+            </ul>
+        </div>
+          
+      </div>
+      <script type="text/javascript">
+        // setting up navbar such that it hides whenever it is scrolled down and appears when scrolled up
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll",function(){
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if(scrollTop>lastScrollTop){
+            navbar.style.top="-100px";
+          }else{
+            navbar.style.top = "0";
+          }
+          lastScrollTop = scrollTop;
+        })
+      </script>
+
+<!-- wrapper class is the class wrapping the entire page --> 
+<div id= "wrapper">
+	<div id="imganddesc">
+		<div class="rec5">
+		
+	</div>
+	<div id="headline">
+		<h1>BUBBLE TEA!!</h1><br>
+     <div class="tags_div">
+        <div class="tag">15 mins </div>
+        <div class="tag">1 serving</div>
+        <div class="tag">Easy</div>
+    </div>
+
+		<p class="headdesc">DESCRIPTION</p>
+		<p class="desc">
+	Bubble tea, as the name suggests, is a tea-based drink from Taiwan. Bubble tea can come in many flavours and have toppings that range from chewy tapioca pearls, grass jelly, aloe vera, or red beans. 
+		</p>
+	</div>
+	</div>
+	<div class="ingredndirect">
+			<div class="Ingredients">
+		<h1>INGREDIENTS</h1>
+		<p>
+    1 Tbsp (6 g) loose black tea leaves <br>
+    ½ cup (120 mL) boiling water<br>
+    4 Tbsp (38 g) quick-cooking tapioca pearls<br>
+    2 Tbsp (30 mL) maple syrup <br>
+    2 Tbsp (25 g) sweetened ube spread, plus more to taste<br>
+    2 Tbsp (30 mL) unsweetened soy milk, for thinning ube <br>
+    ½ cup (100 g) crushed ice<br>
+    ½ cup + 2 Tbsp (150 mL) unsweetened soy milk, for drink assembly †<br> 
+    </p>
+	</div>
+	<div class="directions">
+		<h1>DIRECTIONS</h1>
+		<p>
+1. Steep the tea in the boiling water for 5 minutes.<br><br>
+2. Cook the tapioca pearls according to the package directions. For us, this took 5 minutes.<br><br>
+3. When cooked, drain the pearls, and rinse under cold water. Transfer to a container and add the maple syrup.<br><br>
+4. Mix the ube spread with a splash of the milk in a small bowl to thin it out a bit.<br><br>
+5. To assemble, divide the pearls between the glasses. Add the ube mixture over the pearls.<br><br>
+6. Then add ice, milk, and top with the tea.<br><br>
+7. Stir well and taste test. Different brands of ube spread vary in sweeteness, so add more thinned-out ube spread to taste if desired. Enjoy!<br><br>
+<b>Notes</b><br>
+† Nutrition tip: aim to use plant-based milk that is fortified with calcium.<br><br>
+<b>Storage</b><br>
+This bubble tea is best enjoyed immediately.<br><br>
+</p>
+		
+	</div>
+	</div>
+<div class="reviewncomment">
+	<form name="comment">
+		<h1>REVIEW</h1>
+    <input type="text" id="msg" name="msg" placeholder="Message">
+    </textarea>
+	</form>
+</div>
+	<form name="namendmail">
+		<div class="namenmail">
+  <input type="text" id="name" name="name" placeholder="Name"><br>
+  <input type="text" id="mail" name="mail" placeholder="E-mail">
+</div>
+	</form>
+	<div class="review" style=" color: rgb(243, 181, 25);">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                          <form>
+		<button class="button">Submit</button>
+	</form>	
+
+<!-- Quote for fun -->
+	<div class="quote">
+		<p>"We burnt it So, you dont have to"  </p>
+	</div>
+</div>
+
+
+<!-- COmmon footer for all subpages-->
+ <footer>
+        <div class="footer">
+          <div class="footer1">
+            <h2>Amritha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/amrututu/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/amrithanandini/" target="_blank"><img src="images/linkedinlogo.png" ></a>
+              <a href="https://github.com/amri-tah" target="_blank"><img src="images/githublogo.png" ></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Samhitha</h2>
+            <div class="logos">
+              <a href="http://instagram.com/samhitha_07/" target="_blank"><img src="images/instalogo.png" ></a>
+              <a href="https://www.linkedin.com/in/samhitha-s-476634270/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Samhitha-07" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+          <div class="footer1">
+            <h2>Manasha</h2>
+            <div class="logos">
+              <a href="https://www.instagram.com/_maanzz_/" target="_blank"><img src="images/instalogo.png"></a>
+              <a href="https://www.linkedin.com/in/manasha-arunachalam-531719250/" target="_blank"><img src="images/linkedinlogo.png"></a>
+              <a href="https://github.com/Manasha-1204" target="_blank"><img src="images/githublogo.png"></a>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; padding:1px; margin: 0;">Copyright &copy Burnt Brotta B_Team 1</p>
+      </footer>
+</body>
+</html>
