@@ -232,7 +232,7 @@ ul{
 
 .img1{
   height:500px;
-  width: 100%;
+  max-width: 100%;
   background-image: url("../images/landing/cooking.png");
   background-size: 100%;
   z-index: -1;
