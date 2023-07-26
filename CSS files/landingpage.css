@@ -1,6 +1,7 @@
 *{
   scroll-behavior: smooth;
   cursor: none;
+  overflow-x:hidden;
 }
 body {
   background-color: #F7F3EF;
