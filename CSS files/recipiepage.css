@@ -1,259 +1,259 @@
 *{
-    scroll-behavior: smooth;
-  }
-  body {
-    background-color: #F7F3EF;
-    margin: 0px;
-    cursor: none;
-  }
-  
-  #navbar{
-    
-      position: fixed;
-      padding: 30px 50px 0px 70px;
-      display: flex;
-      gap:30px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #F7F3EF;
+  margin: 0px;
+  cursor: none;
+}
 
+#navbar{
   
-  }
+    position: fixed;
+    padding: 30px 50px 0px 70px;
+    display: flex;
+    gap:30px;
+
+
+}
+
+.logo{
+  margin-right: 110px;
+  width: 300px;
+  height: 100px;
+  background-image: url("../images/logo.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+}
+
+ul{
+    display: flex;
+    gap:80px;
+    justify-content: space-around;
+}
+#navbar{
+  transition: all 300ms ease;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar a{
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: black;
+    text-decoration: none;
+    transition: all 400ms ease;
+  border-radius: 15px;
+}
+#navbar a:hover {
+  background-color: white;
+  padding: 0.86rem 1.51rem;
   
-  .logo{
-    margin-right: 110px;
-    width: 300px;
-    height: 100px;
-    background-image: url("../images/logo.png");
-    background-size: 60%;
-    background-repeat: no-repeat;
-    margin-top: 15px;
-  }
+}
+#contact{
+    background-color: #ffe55b;
+    padding: 10px 20px;
+    border-radius: 13px;
+}
+/*==================================================================*/
+  .circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    background-color: black;
+    position: fixed;
   
-  ul{
-      display: flex;
-      gap:80px;
-      justify-content: space-around;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
   }
-  #navbar{
-    transition: all 300ms ease;
-  }
-  
-  #navbar li{
-      list-style: none;
-  }
-  
-  #navbar a{
-      font-weight: 600;
-      font-size: 1.5rem;
-      font-family: 'Poppins';
-      color: black;
-      text-decoration: none;
-      transition: all 400ms ease;
-    border-radius: 15px;
-  }
-  #navbar a:hover {
-    background-color: white;
-    padding: 0.86rem 1.51rem;
-    
-  }
-  #contact{
-      background-color: #ffe55b;
-      padding: 10px 20px;
-      border-radius: 13px;
-  }
-  /*==================================================================*/
-    .circle {
-      height: 12px;
-      width: 12px;
-      border-radius: 12px;
-      background-color: black;
-      position: fixed;
-    
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 99999999; /* so that it stays on top of all other elements */
-    }
 #wrapper{
-	margin: 0px;
-	padding: 200px;
-	padding-bottom:0px ;
-	font-family: "Poppins";
+margin: 0px;
+padding: 200px;
+padding-bottom:0px ;
+font-family: "Poppins";
 }
 #imganddesc{
-	display:flex;
-	gap: 40px;
+display:flex;
+gap: 40px;
 }
 #headline{
-	width: 400px;
-	height: 700px;
+width: 400px;
+height: 700px;
 }
 #headline h1{
-	font-family:"Poppins";
-	font-size:5rem;
-	line-height:4rem;
+font-family:"Poppins";
+font-size:5rem;
+line-height:4rem;
 }
 .headdesc{
-	font-size: 2rem;
-	margin: 0px;
-  padding: 10px;
+font-size: 2rem;
+margin: 0px;
+padding: 10px;
 }
 .desc{
-	font-size:1rem;
-	margin: 0px;
-	text-align: justify;
+font-size:1rem;
+margin: 0px;
+text-align: justify;
 }
 
 .rec1, .rec2,.rec3,.rec4,.rec5,.rec6{
-	width: 400px;
-	height: 700px;
-	background-size: 100%;
-	background-repeat: no-repeat;
+width: 400px;
+height: 700px;
+background-size: 100%;
+background-repeat: no-repeat;
 }
 
 .rec1{
-  background-image: url("../images/recipiepage/brotta.jpg");
+background-image: url("../images/recipiepage/brotta.jpg");
 }
 .rec2{
-  background-image:url("../images/recipiepage/noodles.jpg");
+background-image:url("../images/recipiepage/noodles.jpg");
 }
 .rec3{
-	background-image: url("../images/recipiepage/tofu shakshuka.jpg");
+background-image: url("../images/recipiepage/tofu shakshuka.jpg");
 }
 .rec4{
-	background-image: url("../images/recipiepage/chocolate mousse.jpg");;
+background-image: url("../images/recipiepage/chocolate mousse.jpg");;
 }
 .rec5{
-	background-image: url("../images/recipiepage/bubble tea.jpg");
+background-image: url("../images/recipiepage/bubble tea.jpg");
 }
 .rec6{
-  background-image: url("../images/recipiepage/Thai red curry.jpg");
+background-image: url("../images/recipiepage/Thai red curry.jpg");
 }
 
- body{
-            margin: 0px;
-        }
-        .tags_div{
-            padding:10px;
-            display: flex;
-            gap:6px;
-        }
-        .tag{
-            background-color: rgba(255,229,91,61%);
-            padding:5px 10px;
-            max-width:25%;
-            text-align: center;
-            color: black;
-            border-radius: 2px;
-            font-family: "Poppins";
-        }
+body{
+          margin: 0px;
+      }
+      .tags_div{
+          padding:10px;
+          display: flex;
+          gap:6px;
+      }
+      .tag{
+          background-color: rgba(255,229,91,61%);
+          padding:5px 10px;
+          max-width:25%;
+          text-align: center;
+          color: black;
+          border-radius: 2px;
+          font-family: "Poppins";
+      }
 .ingredndirect{
-	display: flex;
-	gap: 40px;
+display: flex;
+gap: 40px;
 }
 .Ingredients p{
-	text-align: justify;
+text-align: justify;
 }
 .directions p{
-	text-align: justify;
+text-align: justify;
 }
 .Ingredients h1{
-	font-family: "Poppins";
-	font-size: 2rem;
+font-family: "Poppins";
+font-size: 2rem;
 }
 .directions h1{
-	font-family: "Poppins";
-	font-size: 2rem;
+font-family: "Poppins";
+font-size: 2rem;
 }
- #msg{
-  width: 850px;
-  height: 200px;
-  border: none;
-  margin-top:0px;
+#msg{
+width: 850px;
+height: 200px;
+border: none;
+margin-top:0px;
 }
 .comment{
-	font-size: 1.2rem;
+font-size: 1.2rem;
 }
 input{
-	width: 100%;
-	height: 40px;
-	margin: 10px;
-	border: none;
-	padding: 2px 30px;
-	font-family:"Poppins" ;
+width: 100%;
+height: 40px;
+margin: 10px;
+border: none;
+padding: 2px 30px;
+font-family:"Poppins" ;
 
 }
 
 .namenmail {
-	display: flex;
-	justify-content: space-around;
+display: flex;
+justify-content: space-around;
 }
 .reviewncomment h1{
- margin-top: 50px;
+margin-top: 50px;
 }
 .rate{
-	justify-content: space-around;
+justify-content: space-around;
 }
 .reviewncomment h3{
-	font-size: 1rem;
-	font-weight: 10px;
-	margin-left: 10px;
-	font-family: "Poppins";
+font-size: 1rem;
+font-weight: 10px;
+margin-left: 10px;
+font-family: "Poppins";
 }
 .review{
-	border: 10px;
-	margin: auto;
-	width: 12.5%;
-	padding: 10px;
+border: 10px;
+margin: auto;
+width: 12.5%;
+padding: 10px;
 }
 .button{
- background-color: black;
-  border: 10px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 12.5%;
-  margin: 0px 43%;
+background-color: black;
+border: 10px;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+width: 12.5%;
+margin: 0px 43%;
 }
 .quote{
-	text-align: center;
-	width: 100%;
-	font-family: "Fuzzy Bubbles";
-	font-size: 1.7rem;
+text-align: center;
+width: 100%;
+font-family: "Fuzzy Bubbles";
+font-size: 1.7rem;
 }
 footer{
-    margin:0;
-    padding: 0px;
-    width:100%;
-    height: 130px;
-    cursor: pointer;
-    background-color: black;
-  }
-  .footer{
-    padding: auto 30px;
-    justify-content: center;
-    justify-items: center;
-    padding:30px;
-    display: flex;
-    gap:200px;
-  }
-  
-  .logos{
-    display: flex;
-  }
-  .logos img{
-    width:40px;
-    height:40px;
-  }
-  
-  footer h2{
-    font-size: 1rem;
-    color:white;
-     font-family: "Poppins"; 
-     font-weight: 200;
-      margin: 0; 
-      text-align: center;
-  }
+  margin:0;
+  padding: 0px;
+  width:100%;
+  height: 130px;
+  cursor: pointer;
+  background-color: black;
+}
+.footer{
+  padding: auto 30px;
+  justify-content: center;
+  justify-items: center;
+  padding:30px;
+  display: flex;
+  gap:200px;
+}
+
+.logos{
+  display: flex;
+}
+.logos img{
+  width:40px;
+  height:40px;
+}
+
+footer h2{
+  font-size: 1rem;
+  color:white;
+   font-family: "Poppins"; 
+   font-weight: 200;
+    margin: 0; 
+    text-align: center;
+}
