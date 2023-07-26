@@ -11,7 +11,7 @@ body {
     position: fixed;
     padding: 30px 50px 0px 70px;
     display: flex;
-
+    max-width: 100%;
 }
 
 .logo{
@@ -190,6 +190,7 @@ ul{
 .popularrec img{
   width:20rem;
   height: 28rem;
+  max-width: 100%;
   transition: width 500ms ease,height 500ms ease;
 }
 
@@ -199,8 +200,9 @@ ul{
 }
 
 .viewmore{
-  width:100%;
-  margin:0px 45%;
+  width:50%;
+  max-width:50%;
+  padding-left:45%;
 }
 .viewmore a{
   margin:0px;
@@ -233,6 +235,7 @@ ul{
   height:500px;
   width: 100%;
   background-image: url("../images/landing/cooking.png");
+  max-width: 100%;
   background-size: 100%;
   z-index: -1;
   background-repeat: no-repeat;
@@ -243,6 +246,7 @@ ul{
   justify-content: center;
   background-image: url("../images/landing/pan.png");
   background-size: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
   margin: -50px 150px;
   height:280px;
@@ -273,6 +277,7 @@ input{
 textarea{
   margin: 10px;
   width:93%;
+  
   font-size: 1rem;
   font-family: "Poppins";
   height: 140px;
