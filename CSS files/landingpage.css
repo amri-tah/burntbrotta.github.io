@@ -20,7 +20,6 @@ body {
   width: 300px;
   height: 100px;
   background-image: url("../images/logo.png");
-  max-width: 100%;
   background-size: 60%;
   background-repeat: no-repeat;
   margin-top: 15px;
@@ -187,7 +186,6 @@ ul{
   display: flex;
   gap:30px;
   justify-content: space-around;
-  max-width: 100%;
 }
 
 .popularrec img{
@@ -236,7 +234,6 @@ ul{
   height:500px;
   width: 100%;
   background-image: url("../images/landing/cooking.png");
-  max-width: 100%;
   background-size: 100%;
   z-index: -1;
   background-repeat: no-repeat;
@@ -246,13 +243,11 @@ ul{
   display: flex;
   justify-content: center;
   background-image: url("../images/landing/pan.png");
-  max-width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
   margin: -50px 150px;
   height:280px;
   width: 280px;
-  max-width: 100%
 }
 /*==================================================*/
 .contactus{
