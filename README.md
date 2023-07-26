@@ -24,10 +24,13 @@ Explore the culinary world with us as we share our passion for cooking, deliciou
 
 
 Find this website on [BurntBrotta](https://amri-tah.github.io/burntbrotta.github.io/)
+Note: This website only works on larger screens. It's not a responsive design as of now.
 
 Mouse pointer taken from [codepen.io/zainzafar](https://codepen.io/zainzafar/pen/oNypoEr)
 
-Note: This website only works on larger screens. It's not a responsive design as of now.
+Fonts used:
+- Poppins
+- Climate Crisis
 
 ## The team:
 [Amritha](https://github.com/amri-tah)
