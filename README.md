@@ -31,7 +31,9 @@ Note: This website only works on larger screens. It's not a responsive design as
 
 ## The team:
 [Amritha](https://github.com/amri-tah)
+
 [Manasha](https://github.com/Manasha-1204)
+
 [Samhitha](https://github.com/Samhitha-07)
 
 
