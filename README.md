@@ -1,6 +1,7 @@
 # Welcome to BurntBrotta!🍔🍕🍰
 
 Explore the culinary world with us as we share our passion for cooking, delicious recipes, and exciting food journeys. Our blog is all about celebrating flavors and the joy of cooking, whether you're a seasoned chef or a beginner in the kitchen.
+
 "Burnt Brotta" was a food blog website created as a part of our S2 end-semester project in college for the course "UI Design"!
 
 ## Screenshots:
@@ -27,3 +28,10 @@ Find this website on [BurntBrotta](https://amri-tah.github.io/burntbrotta.github
 Mouse pointer taken from [codepen.io/zainzafar](https://codepen.io/zainzafar/pen/oNypoEr)
 
 Note: This website only works on larger screens. It's not a responsive design as of now.
+
+## The team:
+[Amritha](https://github.com/amri-tah)
+[Manasha](https://github.com/Manasha-1204)
+[Samhitha](https://github.com/Samhitha-07)
+
+
