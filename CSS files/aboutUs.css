@@ -99,9 +99,8 @@ body{
     box-sizing: border-box;
 }
 .about-section{
-  padding:600px 0px 200px 0px;
+  padding:600px 0px 0px 0px;
   background-color: #F7F3EF;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,13 +129,13 @@ body{
     left: 13%;
     transform: translateX(-50%);
     width: 1px;
-    height: 300px;
+    height: 500px;
     background-color:  #ffe55b;
 }
 .text{
     font-size: 15px;
     color: #545454;
-    line-height: 30px;
+    line-height: 180%;
     text-align: justify;
     margin-bottom: 40px;
 }
@@ -148,6 +147,7 @@ body{
 }
 
 .us{
+  margin-top: 0px;
   width: 50%;
   max-width: 50%;
   margin-left:30%;
