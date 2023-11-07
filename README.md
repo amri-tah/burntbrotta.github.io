@@ -2,7 +2,7 @@
 
 Explore the culinary world with us as we share our passion for cooking, delicious recipes, and exciting food journeys. Our blog is all about celebrating flavors and the joy of cooking, whether you're a seasoned chef or a beginner in the kitchen.
 
-"Burnt Brotta" was a food blog website created as a part of our S2 end-semester project in college for the course "UI Design"!
+"Burnt Brotta" was a food blog website created as a part of our S2 end-semester project in college for the course "UI Design"!!!!!
 
 ## Screenshots:
 ### Home Page:
