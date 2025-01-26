@@ -27,6 +27,7 @@
     position: relative;
     padding: 4% 4%;
     background-color: #f3e7ae;
+   
 }
 
 #product1 .pro:hover {
@@ -162,32 +163,5 @@
     }
     
 }
-/*arrow container styles*/
-.arrow-container {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 70px;
-    right: 100px;
-    cursor: pointer;
-}
 
-/*arrow up styles*/
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent ;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #1a1a1a;
-}
-
-/*top arrow button styles*/
-#arrow-top {
-    bottom: auto;
-    top: 20px;
-}
 
