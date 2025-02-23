@@ -452,6 +452,7 @@ footer h2 {
 
 /*arrow container styles*/
 .arrow-container {
+    margin: 30px;
     width: 15px;
     height: 15px;
     padding: 15px;
@@ -488,6 +489,7 @@ footer h2 {
 
 @media (max-width: 768px){
     .arrow-container{
+        margin: 50px;
         width: 15px;
         height: 15px;
         padding: 15px;
