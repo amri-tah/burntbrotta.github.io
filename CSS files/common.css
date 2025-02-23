@@ -14,6 +14,8 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Poppins";
+    
+   
 }
 
 #navbar {
@@ -27,6 +29,7 @@ body {
     justify-items: center;
     transition: all 300ms ease;
     max-width: 90%;
+   
 }
 
 .logo {
@@ -71,6 +74,8 @@ ul {
     padding: 8%;
     border-radius: 0.5em;
     white-space: nowrap;
+   
+   
 }
 
 #navbar #con:hover {
@@ -154,7 +159,9 @@ footer h2 {
     background-color: #1f1f1f;
     line-height: 1.8;
     letter-spacing: 0.03125em;
-    margin: 0;
+    
+   
+    
 }
 
 /* Styles for screen width 1024px or less */
@@ -217,6 +224,7 @@ footer h2 {
         visibility: hidden;
         transform: translateY(-20px);
         transition: all 0.3s ease-in-out;
+       
     }
 
     .menu.active {
@@ -441,4 +449,56 @@ footer h2 {
     }
 }
 
-  
+
+/*arrow container styles*/
+.arrow-container {
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content:center;
+    align-items: right;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    cursor: pointer;
+    background-color: #F7F3EF;
+    transition: background-color 0.3s ease;
+    
+}    
+
+/*arrow up styles*/
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent ;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #1a1a1a;
+}    
+
+/*top arrow button styles*/
+#arrow-top {
+    bottom: auto;
+    top: 20px;
+}
+
+
+/*arrow styles for mobile*/
+
+@media (max-width: 768px){
+    .arrow-container{
+        width: 15px;
+        height: 15px;
+        padding: 15px;
+        bottom: 5px;
+        right: 5px;
+        z-index: 9999;
+        }
+} 
+
+    .arrow-up {
+        border-left: 15px solid  transparent;
+        border-right: 15px solid transparent ;
+        border-bottom: 15px solid #1a1a1a;
+    }
