@@ -4,21 +4,21 @@ Explore the culinary world with us as we share our passion for cooking, deliciou
 
 ## Screenshots:
 ### Home Page:
-![image](https://github.com/amri-tah/burntbrotta.github.io/assets/111682039/564c8177-bdab-486d-829b-d058a5f5b198)
-![image](https://github.com/amri-tah/burntbrotta.github.io/assets/111682039/67f4d3ca-45a7-4d4d-a1db-8d02dd4100a8)
-![image](https://github.com/amri-tah/burntbrotta.github.io/assets/111682039/49493ad3-f3ea-43c7-a5b4-27fe9f4e455c)
+![image](https://github.com/user-attachments/assets/880388f1-e0c2-4cbc-b4c9-c7a16b61f84d)
+![image](https://github.com/user-attachments/assets/9f686a66-7f0e-438a-bb7d-3f3e2b044ac9)
+![image](https://github.com/user-attachments/assets/75c94eba-5854-45da-8c62-8748bcc35c47)
 
 ### Catalog Page:
-![image](https://github.com/user-attachments/assets/1cac7fa7-ce53-4994-b9d1-1e26ec7898f6)
+![image](https://github.com/user-attachments/assets/af977631-73ea-4b74-af97-a8f46fb6f7e6)
 
 ### Recipe Page:
-![image](https://github.com/user-attachments/assets/c4929d00-d6f9-455c-bb65-72bdffc2570e)
+![image](https://github.com/user-attachments/assets/a7bb40f3-34a8-41c9-b7c5-7e6bb2189452)
 
 ### About Us Page:
 ![image](https://github.com/user-attachments/assets/29ea2c38-42bf-4f49-92ed-ec8b83cb6803)
 
 ### Contact Us:
-![image](https://github.com/amri-tah/burntbrotta.github.io/assets/111682039/0d358039-a4c8-410b-a3cf-f8e90a6c2468)
+![image](https://github.com/user-attachments/assets/63dc9c87-e43d-46c2-b6f5-341cab884333)
 
 ## Mobile View
 ### Home Page:
