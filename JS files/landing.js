@@ -53,7 +53,7 @@ const coords = {
   window.addEventListener("scroll",function(){
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
   if(scrollTop>lastScrollTop){
-      navbar.style.top="-100px";
+      navbar.style.top="-135px";
   }else{
       navbar.style.top = "0";
   }

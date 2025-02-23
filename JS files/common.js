@@ -53,7 +53,7 @@ navbar = document.getElementById("navbar");
 window.addEventListener("scroll",function(){
 var scrollTop = window.scrollY || document.documentElement.scrollTop;
 if(scrollTop>lastScrollTop){
-    navbar.style.top="-130px";
+    navbar.style.top="-135px";
 }else if(scrollTop==0){
     navbar.style.top = "0";
 }

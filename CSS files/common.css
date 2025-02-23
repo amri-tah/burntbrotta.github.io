@@ -1,4 +1,3 @@
-
 * {
     scroll-behavior: smooth;
     cursor: none;
@@ -14,8 +13,8 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Poppins";
-    
-   
+
+
 }
 
 #navbar {
@@ -29,7 +28,7 @@ body {
     justify-items: center;
     transition: all 300ms ease;
     max-width: 90%;
-   
+
 }
 
 .logo {
@@ -46,11 +45,13 @@ ul {
     display: flex;
     gap: 12%;
     justify-content: space-around;
+    padding: 0;
 
 }
 
 #navbar li {
     list-style: none;
+    white-space: nowrap;
 }
 
 #navbar a {
@@ -62,7 +63,7 @@ ul {
     transition: all 400ms ease;
     border-radius: 1em;
 }
-  
+
 
 #navbar a:hover {
     background-color: white;
@@ -74,14 +75,15 @@ ul {
     padding: 8%;
     border-radius: 0.5em;
     white-space: nowrap;
-   
-   
+
+
 }
 
 #navbar #con:hover {
     background-color: white;
     padding: 0.86em 1.51em;
 }
+
 #menu-bar {
     display: none;
     flex-direction: column;
@@ -107,7 +109,8 @@ ul {
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
+    z-index: 99999999;
+    /* so that it stays on top of all other elements */
 }
 
 footer {
@@ -118,7 +121,7 @@ footer {
     cursor: pointer;
     margin: 0;
     padding: 0;
-    height: 8.125rem;
+    height: 7rem;
 }
 
 
@@ -159,28 +162,30 @@ footer h2 {
     background-color: #1f1f1f;
     line-height: 1.8;
     letter-spacing: 0.03125em;
-    
-   
-    
+    margin: 0%;
 }
 
 /* Styles for screen width 1024px or less */
-@media screen and (max-width:1024px){
-    .logo{
-        margin-right:0%;
+@media screen and (max-width:1024px) {
+    .logo {
+        margin-right: 0%;
         width: 20%;
     }
+
     #navbar {
         padding: 3% 0% 0 1%;
     }
-    #navbar ul{
+
+    #navbar ul {
         padding: 0%;
         gap: 10%;
     }
-    footer{
+
+    footer {
         height: 6rem;
     }
-    .footer{
+
+    .footer {
         padding-bottom: 0%;
     }
 }
@@ -194,8 +199,8 @@ footer h2 {
     #navbar a:hover {
         background-color: white;
         padding: 0.43rem 1rem;
-    }    
-    
+    }
+
     .logo {
         margin: 7% 0 5% 10%;
         width: 30%;
@@ -205,9 +210,9 @@ footer h2 {
 
     #navbar #con {
         background-color: transparent;
-    }    
-    
-    .logo.hide{
+    }
+
+    .logo.hide {
         opacity: 0;
         display: none;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -224,7 +229,7 @@ footer h2 {
         visibility: hidden;
         transform: translateY(-20px);
         transition: all 0.3s ease-in-out;
-       
+
     }
 
     .menu.active {
@@ -233,7 +238,8 @@ footer h2 {
         transform: translateY(0);
     }
 
-    .menu.hiding { /* Add this new class for hiding animation */
+    .menu.hiding {
+        /* Add this new class for hiding animation */
         transform: translateY(-20px);
         opacity: 0;
         visibility: hidden;
@@ -290,44 +296,47 @@ footer h2 {
         visibility: visible;
         transform-origin: center;
     }
+
     #menu-bar span {
         height: 5px;
         width: 40px;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        transform-origin: center; /* Add this to keep transformation in place */
+        transform-origin: center;
+        /* Add this to keep transformation in place */
     }
+
     #menu-bar.active {
         right: 3%;
-        position:absolute;
+        position: absolute;
         margin-top: 8%;
     }
 }
 
 /* Styles for screen width 576px or less */
-@media screen and (max-width: 576px){
-    .logo{
-        margin:7% 50% 5% 10%;
+@media screen and (max-width: 576px) {
+    .logo {
+        margin: 7% 50% 5% 10%;
         width: 50%;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
         background-size: 100%;
     }
-    
+
     #navbar {
-    padding:0%;
-    width: 100%;
-    margin: 0%;
+        padding: 0%;
+        width: 100%;
+        margin: 0%;
     }
 
     #navbar #con {
         background-color: transparent;
-    }    
+    }
 
     #navbar a:hover {
         background-color: white;
         padding: 0.43rem 1rem;
-    }    
-    
-    .logo.hide{
+    }
+
+    .logo.hide {
         opacity: 0;
         display: none;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -343,30 +352,39 @@ footer h2 {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%);
-        transition: all 0.3s ease-in-out;
     }
 
     .menu.active {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
+        transition: all 0.3s ease-in-out;
         padding: 0% 10% 0% 5%;
     }
-    
 
-    .menu.hiding { /* Add this new class for hiding animation */
+    .menu.hiding {
+        /* Add this new class for hiding animation */
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
     }
 
+    #navbar ul {
+        padding: 0%;
+        gap: 5%;
+        justify-content: center;
+        display: flex;
+    }
+
     .menu ul {
         flex-direction: column;
         align-items: center;
-        gap: 12%;
-        padding-left: 0%;
-        margin: 5% 0%;
+        gap: 6%;
+        height: 35vh;
+        /* Ensures vertical centering */
+        padding-left: 0;
+        margin: 0;
         transition: all 0.3s ease-in-out;
     }
 
@@ -415,40 +433,48 @@ footer h2 {
         visibility: visible;
         transform-origin: center;
     }
+
     #menu-bar span {
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        transform-origin: center; /* Add this to keep transformation in place */
+        transform-origin: center;
+        /* Add this to keep transformation in place */
     }
+
     #menu-bar.active {
         right: 3%;
-        position:absolute;
+        position: absolute;
         margin-top: 10%;
     }
+
     #navbar a {
-    font-size: 1.5em;
+        font-size: 1.5em;
     }
+
     .footer {
-    padding: 5% 0%;
-    gap: 5%;
-    height: 8vh;
-    width: 100%;    
+        padding: 1% 0% 0% 0%;
+        gap: 5%;
+        width: 100%;
 
     }
+
     footer {
-    position: relative;
+        position: relative;
+        height: 4rem;
     }
+
     footer h2 {
         font-size: 0.8125em;
     }
+
     .logos img {
-    width: 2em;
-    height: 2em;
+        width: 2em;
+        height: 2em;
     }
-    .Copyright{
-    padding:1.5% 0%;
+
+    .Copyright {
+        padding: 1% 0%;
     }
 }
-
 
 /*arrow container styles*/
 .arrow-container {
@@ -457,7 +483,7 @@ footer h2 {
     height: 15px;
     padding: 15px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: right;
     border-radius: 50%;
     position: fixed;
@@ -466,17 +492,17 @@ footer h2 {
     cursor: pointer;
     background-color: #F7F3EF;
     transition: background-color 0.3s ease;
-    
-}    
+
+}
 
 /*arrow up styles*/
 .arrow-up {
     width: 0;
     height: 0;
-    border-left: 20px solid transparent ;
+    border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 20px solid #1a1a1a;
-}    
+}
 
 /*top arrow button styles*/
 #arrow-top {
@@ -487,8 +513,8 @@ footer h2 {
 
 /*arrow styles for mobile*/
 
-@media (max-width: 768px){
-    .arrow-container{
+@media (max-width: 768px) {
+    .arrow-container {
         margin: 50px;
         width: 15px;
         height: 15px;
@@ -496,11 +522,11 @@ footer h2 {
         bottom: 5px;
         right: 5px;
         z-index: 9999;
-        }
-} 
-
-    .arrow-up {
-        border-left: 15px solid  transparent;
-        border-right: 15px solid transparent ;
-        border-bottom: 15px solid #1a1a1a;
     }
+}
+
+.arrow-up {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #1a1a1a;
+}

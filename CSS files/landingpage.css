@@ -1,156 +1,173 @@
-*{
+* {
   cursor: none;
 }
-  .main_wrapper {
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #ffe55b;
-    padding: 0px 0px 10px 0px;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .main_div {
-    margin: 0px;
-  }
-  
-.main_div  h1 {
-    color: black;
-    font-family: "Climate Crisis";
-    font-size: 8rem;
-    line-height: 90%;
-    text-align: center;
-    padding: 200px 200px 0px 200px;
-    margin: 0px;
-    align-content: center;
-    transition: line-height 500ms ease;
-  }
-  
-  .main_div h1:hover {
-    line-height: 80%;
-  }
-  
-  .menu2 {
-    width: 40%;
-    border-radius: 24px;
-    display: flex;
-    gap: 100px;
-    margin: 20px auto;
-    justify-content: center;
-  }
-  .menu2 a,.menu a {
-    text-decoration: none;
-    white-space: nowrap;
-    color: black;
-    font-family: "Poppins";
-    transition: all 400ms ease;
-    border-radius: 15px;
-  }
-  .menu2 a:hover,.menu a:hover {
-    background-color: white;
-    padding: 0.86rem 1.51rem;
-  }
+
+.main_wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffe55b;
+  padding: 0px 0px 10px 0px;
+  height: 100vh;
+  text-align: center;
+}
+
+.main_div {
+  margin: 0px;
+}
+
+.main_div h1 {
+  color: black;
+  font-family: "Climate Crisis";
+  font-size: 8rem;
+  line-height: 90%;
+  text-align: center;
+  padding: 200px 200px 0px 200px;
+  margin: 0px;
+  align-content: center;
+  transition: line-height 500ms ease;
+}
+
+.main_div h1:hover {
+  line-height: 80%;
+}
+
+.menu2 {
+  width: 40%;
+  border-radius: 24px;
+  display: flex;
+  gap: 100px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.menu2 a,
+.menu a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: black;
+  font-family: "Poppins";
+  transition: all 400ms ease;
+  border-radius: 15px;
+}
+
+.menu2 a:hover,
+.menu a:hover {
+  background-color: white;
+  padding: 0.86rem 1.51rem;
+}
 
 /*==============================================================*/
-  .arrow-container {
-    margin: auto;
-    padding: 80px;
-    width: 25px;
-    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    height: 20px;
-  }
-  #arrow{
-    cursor: none;
-  }
-  .arrow-down {
-    height: 6px;
-    background: black;
-    transform: rotate(45deg);
-    transform-origin: 0% 0%;
-    border-radius: 5px;
-  }
-  .arrow-down:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 100%;
-    border-radius: 5px;
-    background: black;
-    transform: rotate(-90deg);
-    transform-origin: 0% 100%;
-  }
-  
-  @keyframes bounce {
-    50% {
-      transform: translateY(-15px);
-    }
-  }
-/*==================================================*/
-  .hero_section1 {
-    height: 100%;
-    width: 100%;
-    color: black;
-    display: flex;
-    padding: 80px 0px 0px 0px;
-    margin: 0px 20px;
-    
-  }
-
-  .hero1{
-    margin:2% 0% 2% 0%;
-    padding:5% 4%;
-  }
-  .hero1 h1,.contactus h1, .popularrec h1{
-    font-family: 'Poppins';
-    font-size: 3.5rem;
-    line-height: 90%;
-    font-weight: bold;
-    margin: 1px;
-  }
-
-  .hero1 h3, .hero2 h3{
-    font-family: 'Poppins';
-    font-size: 2rem;
-    line-height: 100%;
-    font-weight: 400;
-    margin: 1px;
-
-  }
-/*==================================================*/
-.popularrec{
-  padding:100px;
+.arrow-container {
+  margin: auto;
+  padding: 80px;
+  width: 25px;
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  height: 20px;
 }
-.popularrec h1{
+
+#arrow {
+  cursor: none;
+}
+
+.arrow-down {
+  height: 6px;
+  background: black;
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  border-radius: 5px;
+}
+
+.arrow-down:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 100%;
+  border-radius: 5px;
+  background: black;
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/*==================================================*/
+.hero_section1 {
+  height: 100%;
+  width: 100%;
+  color: black;
+  display: flex;
+  padding: 80px 0px 0px 0px;
+  margin: 0px 20px;
+
+}
+
+.hero1 {
+  margin: 2% 0% 2% 0%;
+  padding: 5% 4%;
+}
+
+.hero1 h1,
+.contactus h1,
+.popularrec h1 {
+  font-family: 'Poppins';
+  font-size: 3.5rem;
+  line-height: 90%;
+  font-weight: bold;
+  margin: 1px;
+}
+
+.hero1 h3,
+.hero2 h3 {
+  font-family: 'Poppins';
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 400;
+  margin: 1px;
+
+}
+
+/*==================================================*/
+.popularrec {
+  padding: 100px;
+}
+
+.popularrec h1 {
   font-size: 2.5rem;
 }
-.cards{
+
+.cards {
   padding: 50px;
   display: flex;
-  gap:30px;
+  gap: 30px;
   justify-content: space-around;
 }
 
-.popularrec img{
-  width:20rem;
+.popularrec img {
+  width: 20rem;
   height: 28rem;
   max-width: 100%;
-  transition: width 500ms ease,height 500ms ease;
+  transition: width 500ms ease, height 500ms ease;
 }
 
-.popularrec img:hover{
-  width:21rem;
+.popularrec img:hover {
+  width: 21rem;
   height: 29rem;
 }
 
-.viewmore{
-  width:50%;
-  max-width:50%;
-  padding-left:42%;
+.viewmore {
+  width: 50%;
+  max-width: 50%;
+  padding-left: 42%;
 }
-.viewmore a{
-  margin:0px;
+
+.viewmore a {
+  margin: 0px;
   padding: 10px 30px;
   font-family: 'Poppins';
   text-decoration: none;
@@ -162,31 +179,34 @@
   transition: background-color 500ms ease, color 500ms ease;
 }
 
-.viewmore a:hover{
+.viewmore a:hover {
   color: #ffe55b;
   background-color: black;
 }
-/*==================================================*/
-  .hero_section2{
-    padding: 40px 25%;
-  }
-  .hero2 h3{
-    font-size: 2.3rem;
-    margin:0px auto;
-    text-align: center;
-  }
 
-.img1{
-  height:500px;
+/*==================================================*/
+.hero_section2 {
+  padding: 40px 25%;
+}
+
+.hero2 h3 {
+  font-size: 2.3rem;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.img1 {
+  height: 500px;
   width: 75%;
   background-image: url("../images/landing/cooking.png");
   max-width: 100%;
   background-size: 100%;
   z-index: -1;
   background-repeat: no-repeat;
-  
+
 }
-.img2{
+
+.img2 {
   display: flex;
   justify-content: center;
   background-image: url("../images/landing/pan.png");
@@ -194,19 +214,20 @@
   max-width: 100%;
   background-repeat: no-repeat;
   margin: -50px 150px;
-  height:280px;
+  height: 280px;
   width: 280px;
 }
+
 /*==================================================*/
 .contactus {
-  margin: 1% 0 0 0; 
-  padding:8% 15%;    
-  width: 100%;      
-  box-sizing: border-box; 
+  margin: 1% 0 0 0;
+  padding: 8% 15%;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #ffe55b;
 }
 
-.contactus h1{
+.contactus h1 {
   margin-left: 2%;
   margin: 10px;
 }
@@ -214,37 +235,38 @@
 .formel {
   display: flex;
   gap: 10px;
-  width: 100%;     
+  width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: "Poppins";
   font-size: 1.2rem;
   margin: 1% 2%;
-  padding: 1% 1%; 
+  padding: 1% 1%;
   border: 0;
-  width: calc(100% - 4%); 
-  box-sizing: border-box; 
+  width: 98%;
+  box-sizing: border-box;
 }
 
 input {
-  height: 2.5em; 
+  height: 2.5em;
 }
 
 .input-group {
   display: flex;
-  flex-direction: column; 
-  width: 100%;   
-  margin: 10px;    
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
 }
 
 .input-group input {
-  width: 100%; 
+  width: 100%;
   border-radius: 5px;
 }
 
 textarea {
-  height: 8em; 
+  height: 8em;
   border-radius: 5px;
 }
 
@@ -259,10 +281,10 @@ textarea {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #000000 ;
-  color: #ffffff; 
+  background: #000000;
+  color: #ffffff;
   padding: 20px 25px;
-  font-family: 'Fuzzy Bubbles','Poppins', sans-serif;
+  font-family: 'Fuzzy Bubbles', 'Poppins', sans-serif;
   border-radius: 12px;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
@@ -289,8 +311,8 @@ textarea {
 
 .toast-close {
   position: absolute;
-  top: 10px; 
-  right: 15px; 
+  top: 10px;
+  right: 15px;
   font-weight: bold;
   color: white;
   font-size: 1.2em;
@@ -300,9 +322,9 @@ textarea {
   #toast {
     right: 10px;
     bottom: 10px;
-    padding: 15px 20px; 
-    font-size: 0.9rem; 
-    max-width: 95%; 
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    max-width: 95%;
   }
 
   .toast-close {
@@ -314,8 +336,8 @@ textarea {
 
 input[type="submit"] {
   max-width: 300px;
-  width: auto;        
-  height:3rem;       
+  width: auto;
+  height: 3rem;
   background-color: black;
   color: white;
   border: 0;
@@ -325,155 +347,228 @@ input[type="submit"] {
   font-size: 1rem;
   font-weight: 300;
   display: block;
-  margin: 2%;      
+  margin: 2%;
   border-radius: 5px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   overflow: hidden;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .mess {
-  width: 100%;     
-  margin: 0 auto;  
-}/*==================================================*/
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*==================================================*/
 
 @media screen and (max-width:1024px) {
-  .hero_section1{
+  .hero_section1 {
     margin: 0px;
   }
-  .hero_section2{
-    padding:10%;
+
+  .hero_section2 {
+    padding: 10%;
   }
-  .popularrec{
+
+  .popularrec {
     padding: 50px;
   }
-  .main_div h1{
+
+  .main_div h1 {
     padding: 150px;
   }
 }
 
 @media screen and (max-width:768px) {
-  .main_wrapper{
-    padding-top:15% ;
+  .main_wrapper {
+    padding-top: 15%;
   }
-  .main_div h1{
-    padding:50px 10px;
+
+  .main_div h1 {
+    padding: 50px 10px;
     font-size: 5rem;
   }
-  .hero_section1{
+
+  .hero_section1 {
     padding-left: 0%;
   }
-  .hero_section2{
-    padding:5%;
+
+  .hero_section2 {
+    padding: 5%;
   }
-  .viewmore{
+
+  .viewmore {
     padding-left: 37%;
   }
-  .img1{
+
+  .img1 {
     height: auto;
   }
+
+  .input-group input {
+    padding: 2% 4%;
+  }
+
+  .input-group {
+    margin: 6px;
+  }
+
+  input,
+  #message {
+    padding: 1% 0% 0% 2%;
+  }
+
+  textarea {
+    height: 6rem;
+  }
+
+  .mess {
+    width: 70%;
+    margin: 0 30%;
+  }
+
   input[type="submit"] {
     font-size: 1rem;
-    width: 50%;
-    height: 2.5rem;
+    width: 55%;
+    height: 2.2rem;
     padding: 0.4rem 1.5rem;
   }
 }
 
 @media screen and (max-width:576px) {
-  .main_wrapper{
-    padding-top:50% ;
+  .main_wrapper {
+    padding-top: 50%;
   }
-  .main_div h1{
-    padding:50px 10px;
+
+  .main_div h1 {
+    padding: 50px 10px;
     font-size: 2.5rem;
   }
-  .menu2{
+
+  .menu2 {
     gap: 15px;
     font-size: 0.75rem;
   }
+
   .hero_section1 {
     padding-top: 5%;
     display: flex;
-    flex-direction: column; /* Stacks child elements in a column */
-  }
-  
-  .hero_section1 .img1 {
-    min-height: 200px; 
-    background-color: #ccc; 
-    margin:0% 15%;
+    flex-direction: column;
+    /* Stacks child elements in a column */
   }
 
-  .hero1 h1{
+  .hero_section1 .img1 {
+    min-height: 200px;
+    background-color: #ccc;
+    margin: 0% 15%;
+  }
+
+  .hero1 h1 {
     font-size: 1.2rem;
     margin: 1% 0%;
     max-width: fit-content;
   }
-  .hero1 h3{
+
+  .hero1 h3 {
     margin: 1px 0px;
   }
 
-  .hero1 h3, .hero2 h3{
+  .hero1 h3,
+  .hero2 h3 {
     font-size: 1.5rem;
     max-width: fit-content;
   }
-  .popularrec{
+
+  .popularrec {
     padding: 0%;
   }
-  .popularrec h1{
+
+  .popularrec h1 {
     margin: 5% 0% 1% 0%;
     font-size: 1.5rem;
     text-align: center;
   }
-  .popularrec img{
+
+  .popularrec img {
     max-width: 275px;
   }
-  .hero_section1 .hero1{
-    padding:3% 10%;
+
+  .hero_section1 .hero1 {
+    padding: 3% 10%;
   }
-  .hero_section2{
-    padding:10% 0%;
+
+  .hero_section2 {
+    padding: 10% 0%;
   }
-  .cards{
+
+  .cards {
     padding: 20px;
   }
+
   .popularrec a[href$="id=1"],
   .popularrec a[href$="id=6"] {
     display: none;
   }
 
-  .viewmore{
-    padding:0% 22%;
+  .viewmore {
+    padding: 0% 22%;
     white-space: nowrap;
   }
-  .contactus h1{
+
+  .contactus h1 {
     font-size: 1.5rem;
   }
-  .formel{
+
+  .formel {
     margin: 1% 0%;
     gap: 10px;
   }
-  input{
+
+  input {
     height: 2em;
     font-size: 0.75rem;
   }
-  .input-group{
+
+  .input-group {
     margin: 1%;
   }
-  .img1{
+
+  .input-group input {
+    padding: 3% 3%;
+  }
+
+  .img1 {
     height: auto;
   }
-  .img2{
+
+  .img2 {
     margin: 0%;
   }
+
   textarea {
     height: 4em;
     font-size: 0.75rem;
   }
+
+  input,
+  #message {
+    padding: 1% 0% 0% 2%;
+  }
+
   input[type="submit"] {
     font-size: 0.75rem;
-    width: 70%; 
-    height: 2.2rem; 
-    padding: 0.3rem 1rem;
+    width: 70%;
+    height: 2rem;
+    padding: 5%;
+  }
+
+  .mess {
+    width: 60%;
+    margin: 0 25%;
+    height: 2rem;
+  }
+
+  footer {
+    height: 4rem;
   }
 }
