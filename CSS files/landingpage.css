@@ -6,11 +6,14 @@
     width: 100%;
     background-color: #ffe55b;
     padding: 0px 0px 10px 0px;
+    height: 100vh;
+    text-align: center;
   }
   
   .main_div {
     margin: 0px;
   }
+  
 .main_div  h1 {
     color: black;
     font-family: "Climate Crisis";
