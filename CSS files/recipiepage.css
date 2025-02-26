@@ -8,7 +8,7 @@
 
 #imganddesc {
   display: flex;
-  gap:100px;
+  gap: 100px;
 }
 
 #headline {
@@ -36,7 +36,12 @@
   text-align: justify;
 }
 
-.rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
+.rec1,
+.rec2,
+.rec3,
+.rec4,
+.rec5,
+.rec6 {
   width: 400px;
   height: 500px;
   padding-top: 5%;
@@ -44,12 +49,12 @@
   background-repeat: no-repeat;
 }
 
-#recipe-image{
+#recipe-image {
   height: 450px;
 }
 
 #recipe-name {
-  margin:10% 0% 0% 0%;  
+  margin: 10% 0% 0% 0%;
 }
 
 .tags_div {
@@ -73,13 +78,16 @@
 .Ingredients p {
   text-align: justify;
 }
+
 .directions p {
   text-align: justify;
 }
+
 .Ingredients h1 {
   font-family: "Poppins";
   font-size: 2rem;
 }
+
 .directions h1 {
   font-family: "Poppins";
   font-size: 2rem;
@@ -103,31 +111,34 @@ input {
   border-radius: 5px;
   font-family: "Poppins";
 }
- 
+
 .namenmail {
   display: flex;
   gap: 20px;
- }
- 
+}
+
 .namenmail input {
   width: 50%;
   height: 40px;
- }
+}
 
 .reviewncomment h1 {
   margin-top: 50px;
   color: #333;
 }
+
 .rate {
   justify-content: space-around;
   margin-top: 20px;
 }
+
 .reviewncomment h3 {
   font-size: 1rem;
   font-weight: 10px;
   margin-left: 10px;
   font-family: "Poppins";
 }
+
 .review {
   display: flex;
   justify-content: center;
@@ -135,12 +146,13 @@ input {
   margin: 10px;
   padding: 10px;
 }
+
 .review .fa-star {
-  color: #fabb05; 
+  color: #fabb05;
 }
 
 .no-reviews-message {
-  font-size: 16px; 
+  font-size: 16px;
   font-style: italic;
   color: gray;
   padding-bottom: 10px;
@@ -152,9 +164,9 @@ input {
 }
 
 .profile-pic {
-  width: 50px; 
+  width: 50px;
   height: 50px;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .review-header {
@@ -193,7 +205,7 @@ input {
 }
 
 .review-stars {
-  color: #fabb05; 
+  color: #fabb05;
   font-size: 18px;
 }
 
@@ -245,6 +257,7 @@ input {
   font-size: 0.9rem;
   font-family: Arial, sans-serif;
 }
+
 .error {
   margin: 0;
   padding: 0;
@@ -278,6 +291,7 @@ input {
   align-items: center;
   gap: 10px;
 }
+
 #toast .toast-close {
   position: absolute;
   top: 5px;
@@ -290,32 +304,33 @@ input {
 /*==================================================*/
 
 @media screen and (max-width:1024px) {
-    #wrapper {
-      padding: 120px 50px;
-    }
+  #wrapper {
+    padding: 120px 50px;
+  }
 
-    #navbar .logo{
-      margin-right:0%;
-    }
+  #navbar .logo {
+    margin-right: 0%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  
+
   #wrapper {
     padding: 120px 100px 50px 100px;
   }
+
   #imganddesc {
     flex-direction: column;
     gap: 20px;
     align-items: center;
   }
-  
-  #recipe-image{
+
+  #recipe-image {
     object-fit: cover;
-    width:100%;
-    height:50%;
+    width: 100%;
+    height: 50%;
   }
-  
+
   #headline {
     width: 100%;
     min-width: unset;
@@ -330,14 +345,19 @@ input {
 
   .headdesc {
     font-size: 1.5rem;
-    padding:3% 0%;
+    padding: 3% 0%;
   }
 
   .desc {
     font-size: 0.9rem;
   }
 
-  .rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
+  .rec1,
+  .rec2,
+  .rec3,
+  .rec4,
+  .rec5,
+  .rec6 {
     width: 100%;
     height: auto;
   }
@@ -355,7 +375,9 @@ input {
     flex-direction: column;
   }
 
-  .headdesc,.Ingredients h1, .directions h1 {
+  .headdesc,
+  .Ingredients h1,
+  .directions h1 {
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -422,14 +444,19 @@ input {
     padding: 20% 3% 20% 5%;
   }
 
-  
-  #recipe-image{
+
+  #recipe-image {
     object-fit: cover;
-    width:100%;
+    width: 100%;
     height: 75%;
   }
 
-  .rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
+  .rec1,
+  .rec2,
+  .rec3,
+  .rec4,
+  .rec5,
+  .rec6 {
     width: 100%;
     height: auto;
   }
@@ -459,7 +486,7 @@ input {
     font-size: 0.9rem;
   }
 
-  .Ingredients h1, 
+  .Ingredients h1,
   .directions h1 {
     font-size: 1.3rem;
     margin-bottom: 10px;

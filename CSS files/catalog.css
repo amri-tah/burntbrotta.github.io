@@ -116,11 +116,13 @@
 }
 
 .image-container:hover img {
-    opacity: 0.7; /* Change the opacity of the image when hovered */
+    opacity: 0.7;
+    /* Change the opacity of the image when hovered */
 }
 
 .image-container:hover .overlay-text {
-    opacity: 1; /* Display the text when the container is hovered */
+    opacity: 1;
+    /* Display the text when the container is hovered */
 }
 
 .moving-text {
@@ -144,21 +146,27 @@
 }
 
 /* Media Queries for Responsive Design */
-@media screen and (max-width: 1020px) { /* 1200px */
+@media screen and (max-width: 1020px) {
+
+    /* 1200px */
     #product1 .pro {
         width: 30%;
     }
 }
 
-@media screen and (max-width: 992px) { /* 992px */
+@media screen and (max-width: 992px) {
+
+    /* 992px */
     #product1 .pro {
         width: 20%;
     }
 }
 
-@media screen and (max-width: 576px) { /* 576px */
-    .sec1{
-    padding: 0%;
+@media screen and (max-width: 576px) {
+
+    /* 576px */
+    .sec1 {
+        padding: 0%;
     }
-    
+
 }

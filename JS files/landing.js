@@ -53,7 +53,7 @@ const coords = {
   window.addEventListener("scroll",function(){
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
   if(scrollTop>lastScrollTop){
-      navbar.style.top="-100px";
+      navbar.style.top="-135px";
   }else{
       navbar.style.top = "0";
   }
@@ -120,22 +120,66 @@ document.addEventListener('scroll', () => {
 
 // JS code for form validation
 
-function validateemail(){  
-  // form validation
-  var x=document.myform.email.value;  
-  var y=document.myform.message.value;
-  var atposition=x.indexOf("@");  
-  var dotposition=x.lastIndexOf(".");  
-  if (x==""){
-    alert("Please enter an email ID!");  
-    return false;
+document.querySelector("form[name='myform']").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+
+  const nameError = document.getElementById("name-error");
+  const emailError = document.getElementById("email-error");
+  const messageError = document.getElementById("message-error");
+
+  // Clear previous errors
+  [nameError, emailError, messageError].forEach((error) => (error.textContent = ""));
+  [name, email, message].forEach((input) => (input.style.border = "none"));
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let hasError = false;
+
+  if (!name.value.trim() || /[^a-zA-Z\s]/.test(name.value.trim())) {
+    nameError.textContent = "Name should only contain letters and spaces.";
+    name.style.border = "2px solid red";
+    hasError = true;
   }
-  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-    alert("Please enter a valid e-mail address");  
-    return false;  
-  }  
-  if (y==""){
-    alert("Please enter a message!");  
-    return false;
+
+  if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+    emailError.textContent = "Please enter a valid email address.";
+    email.style.border = "2px solid red";
+    hasError = true;
   }
-  }  
+
+  if (!message.value.trim()) {
+    messageError.textContent = "Please enter your message!";
+    message.style.border = "2px solid red";
+    hasError = true;
+  }
+
+  if (!hasError) {
+    const toast = document.createElement("div");
+    toast.id = "toast";
+    toast.innerHTML = `
+      <span class="toast-close">&times;</span>
+      <div class="toast-message">
+        <span>Thank you, <b>${name.value.trim()}</b>!</span> 📬<br> 
+        We'll get back to you as soon as possible. 😊
+      </div>
+    `;
+
+    document.body.appendChild(toast);
+
+    // Reset form fields
+    name.value = "";
+    email.value = "";
+    message.value = "";
+
+    toast.querySelector(".toast-close").addEventListener("click", () => {
+      toast.remove();
+    });
+
+    setTimeout(() => {
+      toast.remove();
+    }, 8000);
+  }
+});

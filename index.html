@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
   <title>Burnt Brotta | Home</title>
   <link href="./CSS files/common.css" rel="stylesheet" type="text/css">
   <link href="./CSS files/landingpage.css" rel="stylesheet" type="text/css">
@@ -37,7 +37,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="catalog.html">Recipes</a></li>
                 <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
-                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="index.html#contact" id="con">Contact Us</a></li>
                 <li><a href="./Register_Login/login.html" id="login">Login</a></li>
                 <li><a href="./Register_Login/signup.html" id="signup">Register</a></li>
@@ -66,6 +66,8 @@
       <div class="arrow-down"></div>
     </div></a>
   </div>
+
+  
 
   <div class="hero_section1" id="hero_section1">
     <div class="hero1">
@@ -99,21 +101,32 @@
     </div>
     <div class="img2"></div>
   </div>
-</body>
 
-
+<a href="#" id="arrow-top"><div class="arrow-container ">
+  <div class="arrow-up"></div>
+  </div></a>
   <!-- Contact us-->
-<div class="contactus" >
-  <h1 id="contact">Contact Us!</h1>
-  <form name="myform"  method="post" onsubmit="return validateemail();">
-    <div class="formel" >
-      <input type="text" placeholder="Name">
-      <input type="email" id="email" placeholder="Email ID">
-    </div>
-    <textarea placeholder="Message" id="message"></textarea>
-    <div class="mess"><input type="submit" value="Send Message!"></div>
-  </form>
-</div>
+  <div class="contactus">
+    <h1 id="contact">Contact Us!</h1>
+    <form name="myform">
+      <div class="formel">
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Name">
+          <div id="name-error" class="error-message"></div>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email ID">
+          <div id="email-error" class="error-message"></div>
+        </div>
+      </div>
+      <textarea id="message" placeholder="Message"></textarea>
+      <div id="message-error" class="error-message"></div>
+      <div class="mess">
+        <input type="submit" value="Send Message!" id="submitBtn">
+      </div>
+    </form>
+  </div>
+  
 
 <script src="JS files/landing.js" type="text/javascript"></script>
 
@@ -148,5 +161,6 @@
   </div>
   <p class="Copyright">&copy; Burnt Brotta B_Team 1 | Privacy | Terms</p>
 </footer>
+</body>
 
 </html>
