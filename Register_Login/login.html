@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="container">
-        <form id="login-form" action="/login" method="post">
+        <form id="login-form">
             <h2>Login</h2>
             <label for="username">Username/Email:</label>
             <input type="text" id="username" name="username" required>
@@ -36,6 +36,30 @@
             <p>Don't have an account? <a href="signup.html">Sign up</a></p>
         </form>
     </div>
-    <script src="server.js"></script>
+    <script>
+    document.getElementById('login-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const formData = {
+            username: document.getElementById('username').value,
+            password: document.getElementById('password').value
+        };
+
+        const response = await fetch('http://localhost:5000/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            sessionStorage.setItem('token', data.token); // Store token securely
+            alert('Login successful');
+            window.location.href = "profile.html";
+        } else {
+            alert(data.message);
+        }
+    });
+    </script>
 </body>
 </html>
