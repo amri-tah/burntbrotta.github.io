@@ -22,17 +22,17 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    padding: 3% 0% 0 3%;
+    padding: 1% 0% 0 3%;
     display: flex;
     z-index: 999;
     justify-items: center;
     transition: all 300ms ease;
     max-width: 90%;
-
 }
 
+
 .logo {
-    margin-right: 10%;
+    margin-right: 2%;
     width: 25%;
     height: 12vh;
     background-image: url("../images/logo.png");
@@ -43,7 +43,7 @@ body {
 
 ul {
     display: flex;
-    gap: 12%;
+    gap: 8%;
     justify-content: space-around;
     padding: 0;
 
@@ -70,20 +70,17 @@ ul {
     padding: 0.86rem 1.51rem;
 }
 
-#navbar #con {
+#navbar #login {
     background-color: #ffe55b;
     padding: 8%;
     border-radius: 0.5em;
     white-space: nowrap;
-
-
 }
 
-#navbar #con:hover {
+#navbar #login:hover {
     background-color: white;
     padding: 0.86em 1.51em;
 }
-
 #menu-bar {
     display: none;
     flex-direction: column;

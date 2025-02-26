@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./CSS files/" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <title>Burnt Brotta | User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div id="navbar">
+        <div class="logo"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../catalog.html">Recipes</a></li>
+                <li><a href="https://www.nofoodwaste.org/" target="_blank">Donate</a></li>
+                <li><a href="../aboutUs.html">About</a></li>
+                <li><a href="../index.html#contact" id="con">Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+        <h2>User Profile</h2>
+
+        <div class="profile-info">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" disabled>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" disabled>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" disabled>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" disabled>
+        </div>
+
+        <button id="logout">Logout</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async function() {
+            const token = sessionStorage.getItem("token");
+
+            if (!token) {
+                alert("You must be logged in to view this page.");
+                window.location.href = "login.html";
+                return;
+            }
+
+            try {
+                const response = await fetch("http://localhost:5000/profile", {
+                    method: "GET",
+                    headers: { "Authorization": `Bearer ${token}` }
+                });
+
+                if (!response.ok) {
+                    alert("Session expired or unauthorized access.");
+                    sessionStorage.removeItem("token");
+                    window.location.href = "login.html";
+                    return;
+                }
+
+                const user = await response.json();
+                document.getElementById("first_name").value = user.first_name;
+                document.getElementById("last_name").value = user.last_name;
+                document.getElementById("email").value = user.email;
+                document.getElementById("username").value = user.username;
+            } catch (error) {
+                console.error("Error fetching user data:", error);
+            }
+        });
+
+        // Logout Functionality
+        document.getElementById("logout").addEventListener("click", function() {
+            sessionStorage.removeItem("token");
+            alert("Logged out successfully!");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

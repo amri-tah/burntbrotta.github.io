@@ -1,0 +1,157 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f3ef; /* Soft gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#navbar {
+    background-color: #ffe55b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0% 0% 0 3%;
+    display: flex;
+    z-index: 999;
+    justify-items: center;
+    transition: all 300ms ease;
+    max-width: 1000%;
+}
+
+.logo {
+    margin-right: 2%;
+    width: 25%;
+    height: 12vh;
+    background-image: url("../images/logo.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin-top: 1.5%;
+}
+
+ul {
+    padding-top: 24px;
+    display: flex;
+    gap: 14%;
+    justify-content: space-around;
+
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar a {
+    font-weight: 600;
+    font-size: 1.75rem;
+    font-family: "Poppins";
+    color: black;
+    text-decoration: none;
+    transition: all 400ms ease;
+    border-radius: 1em;
+}
+  
+
+#navbar a:hover {
+    background-color: white;
+    padding: 0.86rem 0.68rem;
+}
+
+#navbar #con {
+    background-color: #ffe55b;
+    padding: 8%;
+    border-radius: 0.5em;
+    white-space: nowrap;
+}
+
+#navbar #con:hover {
+    background-color: white;
+    padding: 0.86rem 0.68rem;
+}
+
+.container {
+    background: #ffe55b; /* White container */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 500px; /* Slightly wider */
+    display: flex;
+    outline-style: double;
+    outline-width: 4px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 94%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #000000; /* Soft border color */
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000000;
+}
+
+input:focus {
+    border-color: #ffe55b; /* Soft focus color */
+    outline: none;
+}
+
+button {
+    margin-top: 14px;
+    width: 100%;
+    padding: 14px;
+    background-color: #000000; /* Burnt Orange */
+    color: #f7f3ef;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    transition: background-color 0.4s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #f7f3ef;
+    color: #000000;
+    outline-style: solid;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+p a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
