@@ -1,259 +1,540 @@
-*{
-  scroll-behavior: smooth;
-}
-body {
-  background-color: #F7F3EF;
-  margin: 0px;
-  cursor: none;
-}
-
-#navbar{
-  
-    position: fixed;
-    padding: 30px 50px 0px 70px;
-    display: flex;
-    gap:30px;
-
-
-}
-
-.logo{
-  margin-right: 110px;
-  width: 300px;
-  height: 100px;
-  background-image: url("../images/logo.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  margin-top: 15px;
-}
-
-ul{
-    display: flex;
-    gap:80px;
-    justify-content: space-around;
-}
-#navbar{
-  transition: all 300ms ease;
-}
-
-#navbar li{
-    list-style: none;
-}
-
-#navbar a{
-    font-weight: 600;
-    font-size: 1.5rem;
-    font-family: 'Poppins';
-    color: black;
-    text-decoration: none;
-    transition: all 400ms ease;
-  border-radius: 15px;
-}
-#navbar a:hover {
-  background-color: white;
-  padding: 0.86rem 1.51rem;
-  
-}
-#contact{
-    background-color: #ffe55b;
-    padding: 10px 20px;
-    border-radius: 13px;
-}
 /*==================================================================*/
-  .circle {
-    height: 12px;
-    width: 12px;
-    border-radius: 12px;
-    background-color: black;
-    position: fixed;
-  
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-  }
-#wrapper{
-margin: 0px;
-padding: 200px;
-padding-bottom:0px ;
-font-family: "Poppins";
-}
-#imganddesc{
-display:flex;
-gap: 40px;
-}
-#headline{
-width: 400px;
-height: 700px;
-}
-#headline h1{
-font-family:"Poppins";
-font-size:5rem;
-line-height:4rem;
-}
-.headdesc{
-font-size: 2rem;
-margin: 0px;
-padding: 10px;
-}
-.desc{
-font-size:1rem;
-margin: 0px;
-text-align: justify;
+#wrapper {
+  margin: 0;
+  padding: 200px;
+  padding-bottom: 0;
+  font-family: "Poppins";
 }
 
-.rec1, .rec2,.rec3,.rec4,.rec5,.rec6{
-width: 400px;
-height: 700px;
-background-size: 100%;
-background-repeat: no-repeat;
+#imganddesc {
+  display: flex;
+  gap: 100px;
 }
 
-.rec1{
-background-image: url("../images/recipiepage/brotta.jpg");
-}
-.rec2{
-background-image:url("../images/recipiepage/noodles.jpg");
-}
-.rec3{
-background-image: url("../images/recipiepage/tofu shakshuka.jpg");
-}
-.rec4{
-background-image: url("../images/recipiepage/chocolate mousse.jpg");;
-}
-.rec5{
-background-image: url("../images/recipiepage/bubble tea.jpg");
-}
-.rec6{
-background-image: url("../images/recipiepage/Thai red curry.jpg");
+#headline {
+  width: 30%;
+  min-width: 400px;
+  height: 500px;
 }
 
-body{
-          margin: 0px;
-      }
-      .tags_div{
-          padding:10px;
-          display: flex;
-          gap:6px;
-      }
-      .tag{
-          background-color: rgba(255,229,91,61%);
-          padding:5px 10px;
-          max-width:25%;
-          text-align: center;
-          color: black;
-          border-radius: 2px;
-          font-family: "Poppins";
-      }
-.ingredndirect{
-display: flex;
-gap: 40px;
+#headline h1 {
+  font-family: "Poppins";
+  font-size: 5rem;
+  line-height: 4rem;
 }
-.Ingredients p{
-text-align: justify;
-}
-.directions p{
-text-align: justify;
-}
-.Ingredients h1{
-font-family: "Poppins";
-font-size: 2rem;
-}
-.directions h1{
-font-family: "Poppins";
-font-size: 2rem;
-}
-#msg{
-width: 850px;
-height: 200px;
-border: none;
-margin-top:0px;
-}
-.comment{
-font-size: 1.2rem;
-}
-input{
-width: 100%;
-height: 40px;
-margin: 10px;
-border: none;
-padding: 2px 30px;
-font-family:"Poppins" ;
 
+.headdesc {
+  font-size: 2rem;
+  margin: 0;
+  padding: 2% 0%;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 1rem;
+  margin: 0;
+  text-align: justify;
+}
+
+.rec1,
+.rec2,
+.rec3,
+.rec4,
+.rec5,
+.rec6 {
+  width: 400px;
+  height: 500px;
+  padding-top: 5%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#recipe-image {
+  height: 450px;
+}
+
+#recipe-name {
+  margin: 10% 0% 0% 0%;
+}
+
+.tags_div {
+  padding: 2% 0%;
+  display: flex;
+  gap: 1%;
+}
+
+.tag {
+  background-color: rgba(255, 229, 91, 61%);
+  padding: 1% 2%;
+  max-width: 25%;
+  border-radius: 2px;
+}
+
+.ingredndirect {
+  display: flex;
+  gap: 3%;
+}
+
+.Ingredients p {
+  text-align: justify;
+}
+
+.directions p {
+  text-align: justify;
+}
+
+.Ingredients h1 {
+  font-family: "Poppins";
+  font-size: 2rem;
+}
+
+.directions h1 {
+  font-family: "Poppins";
+  font-size: 2rem;
+}
+
+#msg {
+  width: 94%;
+  height: 15vh;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.comment {
+  font-size: 1.2rem;
+}
+
+input {
+  margin: 1%;
+  padding: 0.5% 2%;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins";
 }
 
 .namenmail {
-display: flex;
-justify-content: space-around;
-}
-.reviewncomment h1{
-margin-top: 50px;
-}
-.rate{
-justify-content: space-around;
-}
-.reviewncomment h3{
-font-size: 1rem;
-font-weight: 10px;
-margin-left: 10px;
-font-family: "Poppins";
-}
-.review{
-border: 10px;
-margin: auto;
-width: 12.5%;
-padding: 10px;
-}
-.button{
-background-color: black;
-border: 10px;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
-width: 12.5%;
-margin: 0px 43%;
-}
-.quote{
-text-align: center;
-width: 100%;
-font-family: "Fuzzy Bubbles";
-font-size: 1.7rem;
-}
-footer{
-  margin:0;
-  padding: 0px;
-  width:100%;
-  height: 130px;
-  cursor: pointer;
-  background-color: black;
-}
-.footer{
-  padding: auto 30px;
-  justify-content: center;
-  justify-items: center;
-  padding:30px;
   display: flex;
-  gap:200px;
+  gap: 20px;
 }
 
-.logos{
-  display: flex;
-}
-.logos img{
-  width:40px;
-  height:40px;
+.namenmail input {
+  width: 50%;
+  height: 40px;
 }
 
-footer h2{
+.reviewncomment h1 {
+  margin-top: 50px;
+  color: #333;
+}
+
+.rate {
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.reviewncomment h3 {
   font-size: 1rem;
-  color:white;
-   font-family: "Poppins"; 
-   font-weight: 200;
-    margin: 0; 
-    text-align: center;
+  font-weight: 10px;
+  margin-left: 10px;
+  font-family: "Poppins";
+}
+
+.review {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.review .fa-star {
+  color: #fabb05;
+}
+
+.no-reviews-message {
+  font-size: 16px;
+  font-style: italic;
+  color: gray;
+  padding-bottom: 10px;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+}
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px
+}
+
+.review-details h3 {
+  font-size: 15px;
+  margin: 0px;
+}
+
+.review-stars-and-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review-stars-and-date * {
+  margin: 0px;
+}
+
+.review-stars-seperator {
+  color: #555;
+  font-size: 16px;
+}
+
+.review-date {
+  font-size: 12px;
+}
+
+.review-stars {
+  color: #fabb05;
+  font-size: 18px;
+}
+
+.review-content {
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.review-content p {
+  margin-bottom: 0px;
+}
+
+.review-seperator {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.button {
+  background-color: black;
+  border: 2%;
+  color: white;
+  padding: 1.2% 2.5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 12.5%;
+  margin: 0 44%;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.quote {
+  width: 100%;
+  font-size: 1.7rem;
+  font-family: "Fuzzy Bubbles";
+  text-align: center;
+  color: #555;
+  margin-top: 2%;
+}
+
+.error-messages {
+  margin-top: 5px;
+  color: red;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+}
+
+.error {
+  margin: 0;
+  padding: 0;
+}
+
+#toast {
+  bottom: 2%;
+  right: 2%;
+  padding: 1.5%;
+  max-width: 25%;
+  gap: 2%;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffe55b;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 1.0rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#toast .toast-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/*==================================================*/
+
+@media screen and (max-width:1024px) {
+  #wrapper {
+    padding: 120px 50px;
+  }
+
+  #navbar .logo {
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #wrapper {
+    padding: 120px 100px 50px 100px;
+  }
+
+  #imganddesc {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  #recipe-image {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+  }
+
+  #headline {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+  }
+
+  #headline h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0%;
+  }
+
+  .headdesc {
+    font-size: 1.5rem;
+    padding: 3% 0%;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .rec1,
+  .rec2,
+  .rec3,
+  .rec4,
+  .rec5,
+  .rec6 {
+    width: 100%;
+    height: auto;
+  }
+
+  .tags_div {
+    flex-wrap: wrap;
+    padding: 0%;
+  }
+
+  .tag {
+    max-width: 50%;
+  }
+
+  .ingredndirect {
+    flex-direction: column;
+  }
+
+  .headdesc,
+  .Ingredients h1,
+  .directions h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #msg {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .comment {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    text-indent: 1%;
+  }
+
+  .namenmail {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .namenmail input {
+    width: 100%;
+  }
+
+  .reviewncomment h1 {
+    font-size: 1.5rem;
+  }
+
+  .reviewncomment h3 {
+    font-size: 0.9rem;
+  }
+
+  .review {
+    align-items: center;
+  }
+
+  .button {
+    width: 20%;
+    margin: 0 40%;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+
+  .error-messages {
+    font-size: 0.8rem;
+  }
+
+  #toast {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  #wrapper {
+    padding: 20% 3% 20% 5%;
+  }
+
+
+  #recipe-image {
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+  }
+
+  .rec1,
+  .rec2,
+  .rec3,
+  .rec4,
+  .rec5,
+  .rec6 {
+    width: 100%;
+    height: auto;
+  }
+
+  #headline h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .headdesc {
+    font-size: 1.2rem;
+    padding: 5% 0%;
+  }
+
+  .desc {
+    font-size: 0.85rem;
+  }
+
+  .tags_div {
+    gap: 2%;
+    padding: 0%;
+  }
+
+  .tag {
+    padding: 2% 4%;
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .Ingredients h1,
+  .directions h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .Ingredients p,
+  .directions p {
+    font-size: 0.9rem;
+  }
+
+  #msg {
+    height: 12vh;
+  }
+
+  .namenmail input {
+    height: 35px;
+  }
+
+  .button {
+    width: 40%;
+    margin: 0 30%;
+    padding: 2% 4%;
+    font-size: 14px;
+  }
+
+  .quote {
+    font-size: 1rem;
+    margin-top: 4%;
+  }
+
+  .review {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .review .fa-star {
+    font-size: 0.9rem;
+  }
+
+  #toast {
+    max-width: 90%;
+    bottom: 10px;
+    right: 5%;
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  #toast .toast-close {
+    font-size: 16px;
+  }
 }
